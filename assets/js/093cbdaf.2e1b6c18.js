@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksoftware_notebook=self.webpackChunksoftware_notebook||[]).push([[9707],{3274:o=>{o.exports=JSON.parse('{"label":"hola","permalink":"/software-notebook/blog/tags/hola","allTagsPath":"/software-notebook/blog/tags","count":1,"unlisted":false}')}}]);
