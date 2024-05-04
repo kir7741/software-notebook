@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 tags:
   - env
   - dotenv
@@ -9,7 +9,7 @@ last_update:
   author: Joseph Lin
 ---
 
-# Environment variable
+# Golang 環境變數
 
 ### 從指令中帶入環境變數
 
