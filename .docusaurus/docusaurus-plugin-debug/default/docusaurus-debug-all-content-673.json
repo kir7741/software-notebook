@@ -9,8 +9,8 @@
           "badge": false,
           "noIndex": false,
           "className": "docs-version-current",
-          "path": "/docs",
-          "tagsPath": "/docs/tags",
+          "path": "/software-notebook/docs",
+          "tagsPath": "/software-notebook/docs/tags",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
           "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
@@ -20,13 +20,145 @@
           "contentPathLocalized": "/Users/josephlin/frontend/個人進修/software-notebook/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
+              "id": "database/postgresql/postgresql-install",
+              "title": "Installation",
+              "description": "1. 使用以下指令安裝 PostgreSQL",
+              "source": "@site/docs/database/postgresql/postgresql-install.md",
+              "sourceDirName": "database/postgresql",
+              "slug": "/database/postgresql/postgresql-install",
+              "permalink": "/software-notebook/docs/database/postgresql/postgresql-install",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/database/postgresql/postgresql-install.md",
+              "tags": [
+                {
+                  "label": "database",
+                  "permalink": "/software-notebook/docs/tags/database"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "database"
+                ],
+                "last_update": {
+                  "date": "2024/05/02",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Postgresql",
+                "permalink": "/software-notebook/docs/category/postgresql"
+              },
+              "next": {
+                "title": "Program concepts",
+                "permalink": "/software-notebook/docs/category/program-concepts"
+              }
+            },
+            {
+              "id": "golang/environment-variable",
+              "title": "Golang 環境變數",
+              "description": "從指令中帶入環境變數",
+              "source": "@site/docs/golang/environment-variable.md",
+              "sourceDirName": "golang",
+              "slug": "/golang/environment-variable",
+              "permalink": "/software-notebook/docs/golang/environment-variable",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/golang/environment-variable.md",
+              "tags": [
+                {
+                  "label": "env",
+                  "permalink": "/software-notebook/docs/tags/env"
+                },
+                {
+                  "label": "dotenv",
+                  "permalink": "/software-notebook/docs/tags/dotenv"
+                },
+                {
+                  "label": "godotenv",
+                  "permalink": "/software-notebook/docs/tags/godotenv"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "env",
+                  "dotenv",
+                  "godotenv"
+                ],
+                "last_update": {
+                  "date": "2024/05/02",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Golang",
+                "permalink": "/software-notebook/docs/category/golang"
+              },
+              "next": {
+                "title": "Gorm",
+                "permalink": "/software-notebook/docs/category/gorm"
+              }
+            },
+            {
+              "id": "golang/gorm/gorm-install",
+              "title": "Gorm",
+              "description": "Installation",
+              "source": "@site/docs/golang/gorm/gorm-install.md",
+              "sourceDirName": "golang/gorm",
+              "slug": "/golang/gorm/gorm-install",
+              "permalink": "/software-notebook/docs/golang/gorm/gorm-install",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/golang/gorm/gorm-install.md",
+              "tags": [
+                {
+                  "label": "database",
+                  "permalink": "/software-notebook/docs/tags/database"
+                },
+                {
+                  "label": "gorm",
+                  "permalink": "/software-notebook/docs/tags/gorm"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "database",
+                  "gorm"
+                ],
+                "last_update": {
+                  "date": "2024/05/02",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Gorm",
+                "permalink": "/software-notebook/docs/category/gorm"
+              },
+              "next": {
+                "title": "Database",
+                "permalink": "/software-notebook/docs/category/database"
+              }
+            },
+            {
               "id": "intro",
               "title": "Tutorial Intro",
               "description": "Let's discover Docusaurus in less than 5 minutes.",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
-              "permalink": "/docs/intro",
+              "permalink": "/software-notebook/docs/intro",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
@@ -39,7 +171,101 @@
               "sidebar": "tutorialSidebar",
               "next": {
                 "title": "Tutorial - Basics",
-                "permalink": "/docs/category/tutorial---basics"
+                "permalink": "/software-notebook/docs/category/tutorial---basics"
+              }
+            },
+            {
+              "id": "program-concept/browser-render-flow",
+              "title": "Browser rendering",
+              "description": "當你在瀏覽器輸入網址後，會發生什麼？",
+              "source": "@site/docs/program-concept/browser-render-flow.md",
+              "sourceDirName": "program-concept",
+              "slug": "/program-concept/browser-render-flow",
+              "permalink": "/software-notebook/docs/program-concept/browser-render-flow",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/program-concept/browser-render-flow.md",
+              "tags": [
+                {
+                  "label": "HTML",
+                  "permalink": "/software-notebook/docs/tags/html"
+                },
+                {
+                  "label": "DNS",
+                  "permalink": "/software-notebook/docs/tags/dns"
+                },
+                {
+                  "label": "CSS reflow",
+                  "permalink": "/software-notebook/docs/tags/css-reflow"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "HTML",
+                  "DNS",
+                  "CSS reflow"
+                ],
+                "last_update": {
+                  "date": "2024/05/06",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Program concepts",
+                "permalink": "/software-notebook/docs/category/program-concepts"
+              },
+              "next": {
+                "title": "MVC v.s MVVM",
+                "permalink": "/software-notebook/docs/program-concept/mvc-vs-mvp"
+              }
+            },
+            {
+              "id": "program-concept/mvc-vs-mvp",
+              "title": "MVC v.s MVVM",
+              "description": "",
+              "source": "@site/docs/program-concept/mvc-vs-mvp.md",
+              "sourceDirName": "program-concept",
+              "slug": "/program-concept/mvc-vs-mvp",
+              "permalink": "/software-notebook/docs/program-concept/mvc-vs-mvp",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/program-concept/mvc-vs-mvp.md",
+              "tags": [
+                {
+                  "label": "design Pattern",
+                  "permalink": "/software-notebook/docs/tags/design-pattern"
+                },
+                {
+                  "label": "MVC",
+                  "permalink": "/software-notebook/docs/tags/mvc"
+                },
+                {
+                  "label": "MVVM",
+                  "permalink": "/software-notebook/docs/tags/mvvm"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "design Pattern",
+                  "MVC",
+                  "MVVM"
+                ],
+                "last_update": {
+                  "date": "2024/05/02",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Browser rendering",
+                "permalink": "/software-notebook/docs/program-concept/browser-render-flow"
               }
             },
             {
@@ -49,7 +275,7 @@
               "source": "@site/docs/tutorial-basics/congratulations.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/congratulations",
-              "permalink": "/docs/tutorial-basics/congratulations",
+              "permalink": "/software-notebook/docs/tutorial-basics/congratulations",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/congratulations.md",
@@ -62,11 +288,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Deploy your site",
-                "permalink": "/docs/tutorial-basics/deploy-your-site"
+                "permalink": "/software-notebook/docs/tutorial-basics/deploy-your-site"
               },
               "next": {
                 "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "permalink": "/software-notebook/docs/category/tutorial---extras"
               }
             },
             {
@@ -76,7 +302,7 @@
               "source": "@site/docs/tutorial-basics/create-a-blog-post.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/create-a-blog-post",
-              "permalink": "/docs/tutorial-basics/create-a-blog-post",
+              "permalink": "/software-notebook/docs/tutorial-basics/create-a-blog-post",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-blog-post.md",
@@ -89,11 +315,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Create a Document",
-                "permalink": "/docs/tutorial-basics/create-a-document"
+                "permalink": "/software-notebook/docs/tutorial-basics/create-a-document"
               },
               "next": {
                 "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
+                "permalink": "/software-notebook/docs/tutorial-basics/markdown-features"
               }
             },
             {
@@ -103,7 +329,7 @@
               "source": "@site/docs/tutorial-basics/create-a-document.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/create-a-document",
-              "permalink": "/docs/tutorial-basics/create-a-document",
+              "permalink": "/software-notebook/docs/tutorial-basics/create-a-document",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-document.md",
@@ -116,11 +342,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Create a Page",
-                "permalink": "/docs/tutorial-basics/create-a-page"
+                "permalink": "/software-notebook/docs/tutorial-basics/create-a-page"
               },
               "next": {
                 "title": "Create a Blog Post",
-                "permalink": "/docs/tutorial-basics/create-a-blog-post"
+                "permalink": "/software-notebook/docs/tutorial-basics/create-a-blog-post"
               }
             },
             {
@@ -130,7 +356,7 @@
               "source": "@site/docs/tutorial-basics/create-a-page.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/create-a-page",
-              "permalink": "/docs/tutorial-basics/create-a-page",
+              "permalink": "/software-notebook/docs/tutorial-basics/create-a-page",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-page.md",
@@ -143,11 +369,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Tutorial - Basics",
-                "permalink": "/docs/category/tutorial---basics"
+                "permalink": "/software-notebook/docs/category/tutorial---basics"
               },
               "next": {
                 "title": "Create a Document",
-                "permalink": "/docs/tutorial-basics/create-a-document"
+                "permalink": "/software-notebook/docs/tutorial-basics/create-a-document"
               }
             },
             {
@@ -157,7 +383,7 @@
               "source": "@site/docs/tutorial-basics/deploy-your-site.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/deploy-your-site",
-              "permalink": "/docs/tutorial-basics/deploy-your-site",
+              "permalink": "/software-notebook/docs/tutorial-basics/deploy-your-site",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/deploy-your-site.md",
@@ -170,11 +396,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
+                "permalink": "/software-notebook/docs/tutorial-basics/markdown-features"
               },
               "next": {
                 "title": "Congratulations!",
-                "permalink": "/docs/tutorial-basics/congratulations"
+                "permalink": "/software-notebook/docs/tutorial-basics/congratulations"
               }
             },
             {
@@ -184,7 +410,7 @@
               "source": "@site/docs/tutorial-basics/markdown-features.mdx",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/markdown-features",
-              "permalink": "/docs/tutorial-basics/markdown-features",
+              "permalink": "/software-notebook/docs/tutorial-basics/markdown-features",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/markdown-features.mdx",
@@ -197,11 +423,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Create a Blog Post",
-                "permalink": "/docs/tutorial-basics/create-a-blog-post"
+                "permalink": "/software-notebook/docs/tutorial-basics/create-a-blog-post"
               },
               "next": {
                 "title": "Deploy your site",
-                "permalink": "/docs/tutorial-basics/deploy-your-site"
+                "permalink": "/software-notebook/docs/tutorial-basics/deploy-your-site"
               }
             },
             {
@@ -211,7 +437,7 @@
               "source": "@site/docs/tutorial-extras/manage-docs-versions.md",
               "sourceDirName": "tutorial-extras",
               "slug": "/tutorial-extras/manage-docs-versions",
-              "permalink": "/docs/tutorial-extras/manage-docs-versions",
+              "permalink": "/software-notebook/docs/tutorial-extras/manage-docs-versions",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/manage-docs-versions.md",
@@ -224,11 +450,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "permalink": "/software-notebook/docs/category/tutorial---extras"
               },
               "next": {
                 "title": "Translate your site",
-                "permalink": "/docs/tutorial-extras/translate-your-site"
+                "permalink": "/software-notebook/docs/tutorial-extras/translate-your-site"
               }
             },
             {
@@ -238,7 +464,7 @@
               "source": "@site/docs/tutorial-extras/translate-your-site.md",
               "sourceDirName": "tutorial-extras",
               "slug": "/tutorial-extras/translate-your-site",
-              "permalink": "/docs/tutorial-extras/translate-your-site",
+              "permalink": "/software-notebook/docs/tutorial-extras/translate-your-site",
               "draft": false,
               "unlisted": false,
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/translate-your-site.md",
@@ -251,7 +477,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Manage Docs Versions",
-                "permalink": "/docs/tutorial-extras/manage-docs-versions"
+                "permalink": "/software-notebook/docs/tutorial-extras/manage-docs-versions"
+              },
+              "next": {
+                "title": "Golang",
+                "permalink": "/software-notebook/docs/category/golang"
               }
             }
           ],
@@ -297,7 +527,7 @@
                   "type": "generated-index",
                   "description": "5 minutes to learn the most important Docusaurus concepts.",
                   "slug": "/category/tutorial---basics",
-                  "permalink": "/docs/category/tutorial---basics"
+                  "permalink": "/software-notebook/docs/category/tutorial---basics"
                 }
               },
               {
@@ -318,7 +548,92 @@
                 "link": {
                   "type": "generated-index",
                   "slug": "/category/tutorial---extras",
-                  "permalink": "/docs/category/tutorial---extras"
+                  "permalink": "/software-notebook/docs/category/tutorial---extras"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Golang",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "golang/environment-variable"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Gorm",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "golang/gorm/gorm-install"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/gorm",
+                      "permalink": "/software-notebook/docs/category/gorm"
+                    }
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/golang",
+                  "permalink": "/software-notebook/docs/category/golang"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Database",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Postgresql",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "database/postgresql/postgresql-install"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/postgresql",
+                      "permalink": "/software-notebook/docs/category/postgresql"
+                    }
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/database",
+                  "permalink": "/software-notebook/docs/category/database"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Program concepts",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "program-concept/browser-render-flow"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "program-concept/mvc-vs-mvp"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/program-concepts",
+                  "permalink": "/software-notebook/docs/category/program-concepts"
                 }
               }
             ]
@@ -334,7 +649,7 @@
         {
           "id": "welcome",
           "metadata": {
-            "permalink": "/blog/welcome",
+            "permalink": "/software-notebook/blog/welcome",
             "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
             "source": "@site/blog/2021-08-26-welcome/index.md",
             "title": "Welcome",
@@ -343,15 +658,15 @@
             "tags": [
               {
                 "label": "facebook",
-                "permalink": "/blog/tags/facebook"
+                "permalink": "/software-notebook/blog/tags/facebook"
               },
               {
                 "label": "hello",
-                "permalink": "/blog/tags/hello"
+                "permalink": "/software-notebook/blog/tags/hello"
               },
               {
                 "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
+                "permalink": "/software-notebook/blog/tags/docusaurus"
               }
             ],
             "readingTime": 0.405,
@@ -388,7 +703,7 @@
             "unlisted": false,
             "nextItem": {
               "title": "MDX Blog Post",
-              "permalink": "/blog/mdx-blog-post"
+              "permalink": "/software-notebook/blog/mdx-blog-post"
             }
           },
           "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
@@ -396,7 +711,7 @@
         {
           "id": "mdx-blog-post",
           "metadata": {
-            "permalink": "/blog/mdx-blog-post",
+            "permalink": "/software-notebook/blog/mdx-blog-post",
             "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-01-mdx-blog-post.mdx",
             "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
             "title": "MDX Blog Post",
@@ -405,7 +720,7 @@
             "tags": [
               {
                 "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
+                "permalink": "/software-notebook/blog/tags/docusaurus"
               }
             ],
             "readingTime": 0.175,
@@ -432,11 +747,11 @@
             "unlisted": false,
             "prevItem": {
               "title": "Welcome",
-              "permalink": "/blog/welcome"
+              "permalink": "/software-notebook/blog/welcome"
             },
             "nextItem": {
               "title": "Long Blog Post",
-              "permalink": "/blog/long-blog-post"
+              "permalink": "/software-notebook/blog/long-blog-post"
             }
           },
           "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
@@ -444,7 +759,7 @@
         {
           "id": "long-blog-post",
           "metadata": {
-            "permalink": "/blog/long-blog-post",
+            "permalink": "/software-notebook/blog/long-blog-post",
             "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-29-long-blog-post.md",
             "source": "@site/blog/2019-05-29-long-blog-post.md",
             "title": "Long Blog Post",
@@ -453,11 +768,11 @@
             "tags": [
               {
                 "label": "hello",
-                "permalink": "/blog/tags/hello"
+                "permalink": "/software-notebook/blog/tags/hello"
               },
               {
                 "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
+                "permalink": "/software-notebook/blog/tags/docusaurus"
               }
             ],
             "readingTime": 2.05,
@@ -483,11 +798,11 @@
             "unlisted": false,
             "prevItem": {
               "title": "MDX Blog Post",
-              "permalink": "/blog/mdx-blog-post"
+              "permalink": "/software-notebook/blog/mdx-blog-post"
             },
             "nextItem": {
               "title": "First Blog Post",
-              "permalink": "/blog/first-blog-post"
+              "permalink": "/software-notebook/blog/first-blog-post"
             }
           },
           "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
@@ -495,7 +810,7 @@
         {
           "id": "first-blog-post",
           "metadata": {
-            "permalink": "/blog/first-blog-post",
+            "permalink": "/software-notebook/blog/first-blog-post",
             "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-28-first-blog-post.md",
             "source": "@site/blog/2019-05-28-first-blog-post.md",
             "title": "First Blog Post",
@@ -504,11 +819,11 @@
             "tags": [
               {
                 "label": "hola",
-                "permalink": "/blog/tags/hola"
+                "permalink": "/software-notebook/blog/tags/hola"
               },
               {
                 "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
+                "permalink": "/software-notebook/blog/tags/docusaurus"
               }
             ],
             "readingTime": 0.12,
@@ -540,7 +855,7 @@
             "unlisted": false,
             "prevItem": {
               "title": "Long Blog Post",
-              "permalink": "/blog/long-blog-post"
+              "permalink": "/software-notebook/blog/long-blog-post"
             }
           },
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
@@ -555,7 +870,7 @@
             "first-blog-post"
           ],
           "metadata": {
-            "permalink": "/blog",
+            "permalink": "/software-notebook/blog",
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 1,
@@ -566,19 +881,19 @@
         }
       ],
       "blogTags": {
-        "/blog/tags/facebook": {
+        "/software-notebook/blog/tags/facebook": {
           "label": "facebook",
           "items": [
             "welcome"
           ],
-          "permalink": "/blog/tags/facebook",
+          "permalink": "/software-notebook/blog/tags/facebook",
           "pages": [
             {
               "items": [
                 "welcome"
               ],
               "metadata": {
-                "permalink": "/blog/tags/facebook",
+                "permalink": "/software-notebook/blog/tags/facebook",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -590,13 +905,13 @@
           ],
           "unlisted": false
         },
-        "/blog/tags/hello": {
+        "/software-notebook/blog/tags/hello": {
           "label": "hello",
           "items": [
             "welcome",
             "long-blog-post"
           ],
-          "permalink": "/blog/tags/hello",
+          "permalink": "/software-notebook/blog/tags/hello",
           "pages": [
             {
               "items": [
@@ -604,7 +919,7 @@
                 "long-blog-post"
               ],
               "metadata": {
-                "permalink": "/blog/tags/hello",
+                "permalink": "/software-notebook/blog/tags/hello",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -616,7 +931,7 @@
           ],
           "unlisted": false
         },
-        "/blog/tags/docusaurus": {
+        "/software-notebook/blog/tags/docusaurus": {
           "label": "docusaurus",
           "items": [
             "welcome",
@@ -624,7 +939,7 @@
             "long-blog-post",
             "first-blog-post"
           ],
-          "permalink": "/blog/tags/docusaurus",
+          "permalink": "/software-notebook/blog/tags/docusaurus",
           "pages": [
             {
               "items": [
@@ -634,7 +949,7 @@
                 "first-blog-post"
               ],
               "metadata": {
-                "permalink": "/blog/tags/docusaurus",
+                "permalink": "/software-notebook/blog/tags/docusaurus",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -646,19 +961,19 @@
           ],
           "unlisted": false
         },
-        "/blog/tags/hola": {
+        "/software-notebook/blog/tags/hola": {
           "label": "hola",
           "items": [
             "first-blog-post"
           ],
-          "permalink": "/blog/tags/hola",
+          "permalink": "/software-notebook/blog/tags/hola",
           "pages": [
             {
               "items": [
                 "first-blog-post"
               ],
               "metadata": {
-                "permalink": "/blog/tags/hola",
+                "permalink": "/software-notebook/blog/tags/hola",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -671,19 +986,19 @@
           "unlisted": false
         }
       },
-      "blogTagsListPath": "/blog/tags"
+      "blogTagsListPath": "/software-notebook/blog/tags"
     }
   },
   "docusaurus-plugin-content-pages": {
     "default": [
       {
         "type": "jsx",
-        "permalink": "/",
+        "permalink": "/software-notebook/",
         "source": "@site/src/pages/index.tsx"
       },
       {
         "type": "mdx",
-        "permalink": "/markdown-page",
+        "permalink": "/software-notebook/markdown-page",
         "source": "@site/src/pages/markdown-page.md",
         "title": "Markdown page example",
         "description": "You don't need React to write simple standalone pages.",

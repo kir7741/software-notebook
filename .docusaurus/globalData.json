@@ -1,68 +1,118 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/software-notebook/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/software-notebook/docs",
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "database/postgresql/postgresql-install",
+              "path": "/software-notebook/docs/database/postgresql/postgresql-install",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "golang/environment-variable",
+              "path": "/software-notebook/docs/golang/environment-variable",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "golang/gorm/gorm-install",
+              "path": "/software-notebook/docs/golang/gorm/gorm-install",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/software-notebook/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "program-concept/browser-render-flow",
+              "path": "/software-notebook/docs/program-concept/browser-render-flow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "program-concept/mvc-vs-mvp",
+              "path": "/software-notebook/docs/program-concept/mvc-vs-mvp",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
+              "path": "/software-notebook/docs/tutorial-basics/congratulations",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
+              "path": "/software-notebook/docs/tutorial-basics/create-a-blog-post",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
+              "path": "/software-notebook/docs/tutorial-basics/create-a-document",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
+              "path": "/software-notebook/docs/tutorial-basics/create-a-page",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
+              "path": "/software-notebook/docs/tutorial-basics/deploy-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
+              "path": "/software-notebook/docs/tutorial-basics/markdown-features",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "path": "/software-notebook/docs/tutorial-extras/manage-docs-versions",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
+              "path": "/software-notebook/docs/tutorial-extras/translate-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
+              "path": "/software-notebook/docs/category/tutorial---basics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "path": "/software-notebook/docs/category/tutorial---extras",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/golang",
+              "path": "/software-notebook/docs/category/golang",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/gorm",
+              "path": "/software-notebook/docs/category/gorm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/database",
+              "path": "/software-notebook/docs/category/database",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/postgresql",
+              "path": "/software-notebook/docs/category/postgresql",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/program-concepts",
+              "path": "/software-notebook/docs/category/program-concepts",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -70,7 +120,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
+                "path": "/software-notebook/docs/intro",
                 "label": "intro"
               }
             }

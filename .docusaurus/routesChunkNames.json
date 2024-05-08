@@ -1,265 +1,353 @@
 {
-  "/__docusaurus/debug-60c": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugc-57-00b"
-    }
-  },
-  "/__docusaurus/debug/config-0d6": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugc-57-00b"
-    }
-  },
-  "/__docusaurus/debug/content-efe": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugc-57-00b"
-    },
-    "allContent": "allContent---docusaurus-debug-content-246-9aa"
-  },
-  "/__docusaurus/debug/globalData-878": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugc-57-00b"
-    }
-  },
-  "/__docusaurus/debug/metadata-633": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugc-57-00b"
-    }
-  },
-  "/__docusaurus/debug/registry-256": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugc-57-00b"
-    }
-  },
-  "/__docusaurus/debug/routes-34f": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugc-57-00b"
-    }
-  },
-  "/blog-c3e": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
-    "__context": {
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      },
-      {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
-      }
-    ],
-    "metadata": "metadata---blogb-2-b-df1"
-  },
-  "/blog/archive-0be": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
-    "__context": {
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "archive": "archive---blog-archiveb-2-f-393"
-  },
-  "/blog/first-blog-post-f0e": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "data": {
-        "blogMetadata": "blogMetadata---blog-first-blog-postace-ee5"
-      },
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-first-blog-poste-27-4a1"
-  },
-  "/blog/long-blog-post-c3b": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "data": {
-        "blogMetadata": "blogMetadata---blog-first-blog-postace-ee5"
-      },
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-long-blog-post-736-bc7"
-  },
-  "/blog/mdx-blog-post-dc4": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "data": {
-        "blogMetadata": "blogMetadata---blog-first-blog-postace-ee5"
-      },
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-mdx-blog-post-593-37b"
-  },
-  "/blog/tags-20d": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
-    "__context": {
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "tags": "tags---blog-tagsa-70-da2"
-  },
-  "/blog/tags/docusaurus-274": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      },
-      {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
-      }
-    ],
-    "tag": "tag---blog-tags-docusaurusa-80-728",
-    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
-  },
-  "/blog/tags/facebook-b76": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      }
-    ],
-    "tag": "tag---blog-tags-facebook-031-c52",
-    "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
-  },
-  "/blog/tags/hello-22a": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      },
-      {
-        "content": "content---blog-871-381"
-      }
-    ],
-    "tag": "tag---blog-tags-hello-30-a-bed",
-    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
-  },
-  "/blog/tags/hola-570": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-925-e00"
-      }
-    ],
-    "tag": "tag---blog-tags-holae-16-18a",
-    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
-  },
-  "/blog/welcome-65c": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "data": {
-        "blogMetadata": "blogMetadata---blog-first-blog-postace-ee5"
-      },
-      "plugin": "plugin---blog-7-f-3-9ca"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-welcomed-9-f-ffb"
-  },
-  "/markdown-page-8f3": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
-    "__context": {
-      "plugin": "plugin---markdown-page-6-b-3-0ac"
-    },
-    "content": "content---markdown-page-393-028"
-  },
-  "/docs-4ff": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
-    "__context": {
-      "plugin": "plugin---docs-348-5b5"
-    }
-  },
-  "/docs-138": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---docs-935-398"
-  },
-  "/docs-0c0": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/docs/category/tutorial---basics-d44": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-basicsea-8-8c8"
-  },
-  "/docs/category/tutorial---extras-f09": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-extrasc-84-abc"
-  },
-  "/docs/intro-61d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
-  },
-  "/docs/tutorial-basics/congratulations-458": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-congratulations-822-958"
-  },
-  "/docs/tutorial-basics/create-a-blog-post-108": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-blog-post-533-e85"
-  },
-  "/docs/tutorial-basics/create-a-document-8fc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-document-1-e-4-078"
-  },
-  "/docs/tutorial-basics/create-a-page-951": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-page-5-c-8-e19"
-  },
-  "/docs/tutorial-basics/deploy-your-site-4f5": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-deploy-your-sitef-55-a3f"
-  },
-  "/docs/tutorial-basics/markdown-features-b05": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
-  },
-  "/docs/tutorial-extras/manage-docs-versions-978": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
-  },
-  "/docs/tutorial-extras/translate-your-site-f9a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
-  },
-  "/-01f": {
+  "/software-notebook/-038": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---markdown-page-6-b-3-0ac"
+      "plugin": "plugin---software-notebook-6-b-3-626"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "config---software-notebook-5-e-9-3af"
+  },
+  "/software-notebook/__docusaurus/debug-b8f": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---software-notebook-docusaurus-debugc-57-4fb"
+    }
+  },
+  "/software-notebook/__docusaurus/debug/config-83f": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---software-notebook-docusaurus-debugc-57-4fb"
+    }
+  },
+  "/software-notebook/__docusaurus/debug/content-9b5": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---software-notebook-docusaurus-debugc-57-4fb"
+    },
+    "allContent": "allContent---software-notebook-docusaurus-debug-content-246-177"
+  },
+  "/software-notebook/__docusaurus/debug/globalData-942": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---software-notebook-docusaurus-debugc-57-4fb"
+    }
+  },
+  "/software-notebook/__docusaurus/debug/metadata-453": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---software-notebook-docusaurus-debugc-57-4fb"
+    }
+  },
+  "/software-notebook/__docusaurus/debug/registry-bd2": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---software-notebook-docusaurus-debugc-57-4fb"
+    }
+  },
+  "/software-notebook/__docusaurus/debug/routes-594": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---software-notebook-docusaurus-debugc-57-4fb"
+    }
+  },
+  "/software-notebook/blog-da9": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "items": [
+      {
+        "content": "content---software-notebook-blog-766-ed7"
+      },
+      {
+        "content": "content---software-notebook-blogf-4-f-b79"
+      },
+      {
+        "content": "content---software-notebook-blog-871-107"
+      },
+      {
+        "content": "content---software-notebook-blog-925-993"
+      }
+    ],
+    "metadata": "metadata---software-notebook-blogb-31-a04"
+  },
+  "/software-notebook/blog/archive-ce9": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "archive": "archive---software-notebook-blog-archiveb-34-e25"
+  },
+  "/software-notebook/blog/first-blog-post-1ab": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---software-notebook-blog-first-blog-postace-bb4"
+      },
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "content": "content---software-notebook-blog-first-blog-poste-27-ad2"
+  },
+  "/software-notebook/blog/long-blog-post-d2d": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---software-notebook-blog-first-blog-postace-bb4"
+      },
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "content": "content---software-notebook-blog-long-blog-post-736-f39"
+  },
+  "/software-notebook/blog/mdx-blog-post-0fa": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---software-notebook-blog-first-blog-postace-bb4"
+      },
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "content": "content---software-notebook-blog-mdx-blog-post-593-128"
+  },
+  "/software-notebook/blog/tags-e8a": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "tags": "tags---software-notebook-blog-tagsd-00-e44"
+  },
+  "/software-notebook/blog/tags/docusaurus-8aa": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "items": [
+      {
+        "content": "content---software-notebook-blog-766-ed7"
+      },
+      {
+        "content": "content---software-notebook-blogf-4-f-b79"
+      },
+      {
+        "content": "content---software-notebook-blog-871-107"
+      },
+      {
+        "content": "content---software-notebook-blog-925-993"
+      }
+    ],
+    "tag": "tag---software-notebook-blog-tags-docusaurus-5-eb-1a1",
+    "listMetadata": "listMetadata---software-notebook-blog-tags-docusaurus-225-9bd"
+  },
+  "/software-notebook/blog/tags/facebook-cad": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "items": [
+      {
+        "content": "content---software-notebook-blog-766-ed7"
+      }
+    ],
+    "tag": "tag---software-notebook-blog-tags-facebookc-69-9e0",
+    "listMetadata": "listMetadata---software-notebook-blog-tags-facebook-38-e-eae"
+  },
+  "/software-notebook/blog/tags/hello-2b4": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "items": [
+      {
+        "content": "content---software-notebook-blog-766-ed7"
+      },
+      {
+        "content": "content---software-notebook-blog-871-107"
+      }
+    ],
+    "tag": "tag---software-notebook-blog-tags-hellod-62-25f",
+    "listMetadata": "listMetadata---software-notebook-blog-tags-hello-752-3c9"
+  },
+  "/software-notebook/blog/tags/hola-6a7": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "items": [
+      {
+        "content": "content---software-notebook-blog-925-993"
+      }
+    ],
+    "tag": "tag---software-notebook-blog-tags-hola-093-fe9",
+    "listMetadata": "listMetadata---software-notebook-blog-tags-hola-0-de-825"
+  },
+  "/software-notebook/blog/welcome-d23": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---software-notebook-blog-first-blog-postace-bb4"
+      },
+      "plugin": "plugin---software-notebook-blog-7-f-3-b03"
+    },
+    "sidebar": "sidebar---software-notebook-blog-814-b41",
+    "content": "content---software-notebook-blog-welcomed-9-f-3ba"
+  },
+  "/software-notebook/markdown-page-e24": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---software-notebook-6-b-3-626"
+    },
+    "content": "content---software-notebook-markdown-page-393-362"
+  },
+  "/software-notebook/docs-987": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---software-notebook-docs-348-744"
+    }
+  },
+  "/software-notebook/docs-576": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "version": "version---software-notebook-docs-935-7a9"
+  },
+  "/software-notebook/docs/tags-156": {
+    "__comp": "__comp---theme-doc-tags-list-page-372-89e",
+    "tags": "tags---software-notebook-docs-tags-559-f66"
+  },
+  "/software-notebook/docs/tags/css-reflow-da5": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-css-reflow-921-a0d"
+  },
+  "/software-notebook/docs/tags/database-016": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-database-9-af-ead"
+  },
+  "/software-notebook/docs/tags/design-pattern-5b2": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-design-pattern-264-ac1"
+  },
+  "/software-notebook/docs/tags/dns-1f5": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-dnscb-4-aed"
+  },
+  "/software-notebook/docs/tags/dotenv-8a7": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-dotenv-96-c-3b5"
+  },
+  "/software-notebook/docs/tags/env-e44": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-envb-57-e87"
+  },
+  "/software-notebook/docs/tags/godotenv-a2d": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-godotenvdc-2-d1c"
+  },
+  "/software-notebook/docs/tags/gorm-d97": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-gormaf-6-79f"
+  },
+  "/software-notebook/docs/tags/html-545": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-html-729-f49"
+  },
+  "/software-notebook/docs/tags/mvc-203": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-mvc-26-c-71f"
+  },
+  "/software-notebook/docs/tags/mvvm-5d1": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-mvvm-55-a-685"
+  },
+  "/software-notebook/docs-bb5": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/software-notebook/docs/category/database-109": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-databaseb-43-3a3"
+  },
+  "/software-notebook/docs/category/golang-f07": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-golang-302-9c6"
+  },
+  "/software-notebook/docs/category/gorm-ebb": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-gormbd-3-50b"
+  },
+  "/software-notebook/docs/category/postgresql-64c": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-postgresql-094-1c7"
+  },
+  "/software-notebook/docs/category/program-concepts-8cb": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-program-conceptsbc-8-ade"
+  },
+  "/software-notebook/docs/category/tutorial---basics-efe": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-tutorial-basics-7-a-1-5d6"
+  },
+  "/software-notebook/docs/category/tutorial---extras-0e5": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-tutorial-extras-9-f-7-adb"
+  },
+  "/software-notebook/docs/database/postgresql/postgresql-install-7f8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-database-postgresql-postgresql-install-0-ea-5c3"
+  },
+  "/software-notebook/docs/golang/environment-variable-835": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-golang-environment-variablea-79-6ec"
+  },
+  "/software-notebook/docs/golang/gorm/gorm-install-268": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-golang-gorm-gorm-install-1-b-4-9b6"
+  },
+  "/software-notebook/docs/intro-bd1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-intro-0-e-3-bfc"
+  },
+  "/software-notebook/docs/program-concept/browser-render-flow-028": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-program-concept-browser-render-flow-523-61d"
+  },
+  "/software-notebook/docs/program-concept/mvc-vs-mvp-cbd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-program-concept-mvc-vs-mvpac-6-edb"
+  },
+  "/software-notebook/docs/tutorial-basics/congratulations-c61": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-basics-congratulations-822-60f"
+  },
+  "/software-notebook/docs/tutorial-basics/create-a-blog-post-c7e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-basics-create-a-blog-post-533-681"
+  },
+  "/software-notebook/docs/tutorial-basics/create-a-document-99d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-basics-create-a-document-1-e-4-a57"
+  },
+  "/software-notebook/docs/tutorial-basics/create-a-page-2b0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-basics-create-a-page-5-c-8-218"
+  },
+  "/software-notebook/docs/tutorial-basics/deploy-your-site-22e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-basics-deploy-your-sitef-55-836"
+  },
+  "/software-notebook/docs/tutorial-basics/markdown-features-29b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-basics-markdown-features-18-c-294"
+  },
+  "/software-notebook/docs/tutorial-extras/manage-docs-versions-0ce": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-extras-manage-docs-versionsdff-ad4"
+  },
+  "/software-notebook/docs/tutorial-extras/translate-your-site-8e9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-tutorial-extras-translate-your-sitee-44-fc8"
   }
 }
