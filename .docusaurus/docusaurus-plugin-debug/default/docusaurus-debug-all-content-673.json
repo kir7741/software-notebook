@@ -54,8 +54,8 @@
                 "permalink": "/software-notebook/docs/category/postgresql"
               },
               "next": {
-                "title": "Program concepts",
-                "permalink": "/software-notebook/docs/category/program-concepts"
+                "title": "Golang",
+                "permalink": "/software-notebook/docs/category/golang"
               }
             },
             {
@@ -147,8 +147,8 @@
                 "permalink": "/software-notebook/docs/category/gorm"
               },
               "next": {
-                "title": "Database",
-                "permalink": "/software-notebook/docs/category/database"
+                "title": "Program concepts",
+                "permalink": "/software-notebook/docs/category/program-concepts"
               }
             },
             {
@@ -172,6 +172,45 @@
               "next": {
                 "title": "Tutorial - Basics",
                 "permalink": "/software-notebook/docs/category/tutorial---basics"
+              }
+            },
+            {
+              "id": "javascript/set",
+              "title": "Set",
+              "description": "",
+              "source": "@site/docs/javascript/set.md",
+              "sourceDirName": "javascript",
+              "slug": "/javascript/set",
+              "permalink": "/software-notebook/docs/javascript/set",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/javascript/set.md",
+              "tags": [
+                {
+                  "label": "JavaScript",
+                  "permalink": "/software-notebook/docs/tags/java-script"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "JavaScript"
+                ],
+                "last_update": {
+                  "date": "2024/05/08",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "JavaScript",
+                "permalink": "/software-notebook/docs/category/javascript"
+              },
+              "next": {
+                "title": "Database",
+                "permalink": "/software-notebook/docs/category/database"
               }
             },
             {
@@ -226,7 +265,7 @@
             {
               "id": "program-concept/mvc-vs-mvp",
               "title": "MVC v.s MVVM",
-              "description": "",
+              "description": "什麼是 MVC 架構？",
               "source": "@site/docs/program-concept/mvc-vs-mvp.md",
               "sourceDirName": "program-concept",
               "slug": "/program-concept/mvc-vs-mvp",
@@ -480,8 +519,8 @@
                 "permalink": "/software-notebook/docs/tutorial-extras/manage-docs-versions"
               },
               "next": {
-                "title": "Golang",
-                "permalink": "/software-notebook/docs/category/golang"
+                "title": "JavaScript",
+                "permalink": "/software-notebook/docs/category/javascript"
               }
             }
           ],
@@ -553,36 +592,19 @@
               },
               {
                 "type": "category",
-                "label": "Golang",
+                "label": "JavaScript",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
                     "type": "doc",
-                    "id": "golang/environment-variable"
-                  },
-                  {
-                    "type": "category",
-                    "label": "Gorm",
-                    "collapsible": true,
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "golang/gorm/gorm-install"
-                      }
-                    ],
-                    "link": {
-                      "type": "generated-index",
-                      "slug": "/category/gorm",
-                      "permalink": "/software-notebook/docs/category/gorm"
-                    }
+                    "id": "javascript/set"
                   }
                 ],
                 "link": {
                   "type": "generated-index",
-                  "slug": "/category/golang",
-                  "permalink": "/software-notebook/docs/category/golang"
+                  "slug": "/category/javascript",
+                  "permalink": "/software-notebook/docs/category/javascript"
                 }
               },
               {
@@ -613,6 +635,40 @@
                   "type": "generated-index",
                   "slug": "/category/database",
                   "permalink": "/software-notebook/docs/category/database"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Golang",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "golang/environment-variable"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Gorm",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "golang/gorm/gorm-install"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/gorm",
+                      "permalink": "/software-notebook/docs/category/gorm"
+                    }
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/golang",
+                  "permalink": "/software-notebook/docs/category/golang"
                 }
               },
               {

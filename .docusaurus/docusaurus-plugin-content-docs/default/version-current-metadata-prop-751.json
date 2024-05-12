@@ -92,6 +92,47 @@
       },
       {
         "type": "category",
+        "label": "JavaScript",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Set",
+            "href": "/software-notebook/docs/javascript/set",
+            "docId": "javascript/set",
+            "unlisted": false
+          }
+        ],
+        "href": "/software-notebook/docs/category/javascript"
+      },
+      {
+        "type": "category",
+        "label": "Database",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "Postgresql",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Installation",
+                "href": "/software-notebook/docs/database/postgresql/postgresql-install",
+                "docId": "database/postgresql/postgresql-install",
+                "unlisted": false
+              }
+            ],
+            "href": "/software-notebook/docs/category/postgresql"
+          }
+        ],
+        "href": "/software-notebook/docs/category/database"
+      },
+      {
+        "type": "category",
         "label": "Golang",
         "collapsible": true,
         "collapsed": true,
@@ -121,31 +162,6 @@
           }
         ],
         "href": "/software-notebook/docs/category/golang"
-      },
-      {
-        "type": "category",
-        "label": "Database",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "category",
-            "label": "Postgresql",
-            "collapsible": true,
-            "collapsed": true,
-            "items": [
-              {
-                "type": "link",
-                "label": "Installation",
-                "href": "/software-notebook/docs/database/postgresql/postgresql-install",
-                "docId": "database/postgresql/postgresql-install",
-                "unlisted": false
-              }
-            ],
-            "href": "/software-notebook/docs/category/postgresql"
-          }
-        ],
-        "href": "/software-notebook/docs/category/database"
       },
       {
         "type": "category",
@@ -197,6 +213,12 @@
       "description": "Let's discover Docusaurus in less than 5 minutes.",
       "sidebar": "tutorialSidebar"
     },
+    "javascript/set": {
+      "id": "javascript/set",
+      "title": "Set",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
     "program-concept/browser-render-flow": {
       "id": "program-concept/browser-render-flow",
       "title": "Browser rendering",
@@ -206,7 +228,7 @@
     "program-concept/mvc-vs-mvp": {
       "id": "program-concept/mvc-vs-mvp",
       "title": "MVC v.s MVVM",
-      "description": "",
+      "description": "什麼是 MVC 架構？",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/congratulations": {

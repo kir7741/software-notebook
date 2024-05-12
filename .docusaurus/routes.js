@@ -104,11 +104,11 @@ export default [
   },
   {
     path: '/software-notebook/docs',
-    component: ComponentCreator('/software-notebook/docs', '987'),
+    component: ComponentCreator('/software-notebook/docs', 'a51'),
     routes: [
       {
         path: '/software-notebook/docs',
-        component: ComponentCreator('/software-notebook/docs', '576'),
+        component: ComponentCreator('/software-notebook/docs', '118'),
         routes: [
           {
             path: '/software-notebook/docs/tags',
@@ -161,6 +161,11 @@ export default [
             exact: true
           },
           {
+            path: '/software-notebook/docs/tags/java-script',
+            component: ComponentCreator('/software-notebook/docs/tags/java-script', '381'),
+            exact: true
+          },
+          {
             path: '/software-notebook/docs/tags/mvc',
             component: ComponentCreator('/software-notebook/docs/tags/mvc', '203'),
             exact: true
@@ -172,7 +177,7 @@ export default [
           },
           {
             path: '/software-notebook/docs',
-            component: ComponentCreator('/software-notebook/docs', 'bb5'),
+            component: ComponentCreator('/software-notebook/docs', 'aa5'),
             routes: [
               {
                 path: '/software-notebook/docs/category/database',
@@ -189,6 +194,12 @@ export default [
               {
                 path: '/software-notebook/docs/category/gorm',
                 component: ComponentCreator('/software-notebook/docs/category/gorm', 'ebb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/category/javascript',
+                component: ComponentCreator('/software-notebook/docs/category/javascript', '72b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -237,6 +248,12 @@ export default [
               {
                 path: '/software-notebook/docs/intro',
                 component: ComponentCreator('/software-notebook/docs/intro', 'bd1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/javascript/set',
+                component: ComponentCreator('/software-notebook/docs/javascript/set', 'f98'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

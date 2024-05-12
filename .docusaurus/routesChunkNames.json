@@ -205,13 +205,13 @@
     },
     "content": "content---software-notebook-markdown-page-393-362"
   },
-  "/software-notebook/docs-987": {
+  "/software-notebook/docs-a51": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---software-notebook-docs-348-744"
     }
   },
-  "/software-notebook/docs-576": {
+  "/software-notebook/docs-118": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---software-notebook-docs-935-7a9"
   },
@@ -255,6 +255,10 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-html-729-f49"
   },
+  "/software-notebook/docs/tags/java-script-381": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-java-script-52-b-a60"
+  },
   "/software-notebook/docs/tags/mvc-203": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-mvc-26-c-71f"
@@ -263,7 +267,7 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-mvvm-55-a-685"
   },
-  "/software-notebook/docs-bb5": {
+  "/software-notebook/docs-aa5": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/software-notebook/docs/category/database-109": {
@@ -277,6 +281,10 @@
   "/software-notebook/docs/category/gorm-ebb": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-gormbd-3-50b"
+  },
+  "/software-notebook/docs/category/javascript-72b": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-javascript-29-d-e83"
   },
   "/software-notebook/docs/category/postgresql-64c": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -309,6 +317,10 @@
   "/software-notebook/docs/intro-bd1": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-intro-0-e-3-bfc"
+  },
+  "/software-notebook/docs/javascript/set-f98": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-javascript-set-08-d-25b"
   },
   "/software-notebook/docs/program-concept/browser-render-flow-028": {
     "__comp": "__comp---theme-doc-item-178-a40",
