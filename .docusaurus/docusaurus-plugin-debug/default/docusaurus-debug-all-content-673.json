@@ -152,6 +152,41 @@
               }
             },
             {
+              "id": "interview/ask-company",
+              "title": "面試要確認的問題",
+              "description": "（ㄧ）、工作條件的排名",
+              "source": "@site/docs/interview/ask-company.md",
+              "sourceDirName": "interview",
+              "slug": "/interview/ask-company",
+              "permalink": "/software-notebook/docs/interview/ask-company",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/interview/ask-company.md",
+              "tags": [
+                {
+                  "label": "Interview",
+                  "permalink": "/software-notebook/docs/tags/interview"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "Interview"
+                ],
+                "last_update": {
+                  "date": "2024/05/08",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Interview",
+                "permalink": "/software-notebook/docs/category/interview"
+              }
+            },
+            {
               "id": "intro",
               "title": "Tutorial Intro",
               "description": "Let's discover Docusaurus in less than 5 minutes.",
@@ -239,9 +274,9 @@
                 }
               ],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 2,
               "frontMatter": {
-                "sidebar_position": 1,
+                "sidebar_position": 2,
                 "tags": [
                   "HTML",
                   "DNS",
@@ -254,12 +289,56 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Program concepts",
-                "permalink": "/software-notebook/docs/category/program-concepts"
+                "title": "CORS",
+                "permalink": "/software-notebook/docs/program-concept/cors"
               },
               "next": {
                 "title": "MVC v.s MVVM",
                 "permalink": "/software-notebook/docs/program-concept/mvc-vs-mvp"
+              }
+            },
+            {
+              "id": "program-concept/cors",
+              "title": "CORS",
+              "description": "什麼是同源政策（Same-Origin Policy）？",
+              "source": "@site/docs/program-concept/cors.md",
+              "sourceDirName": "program-concept",
+              "slug": "/program-concept/cors",
+              "permalink": "/software-notebook/docs/program-concept/cors",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/program-concept/cors.md",
+              "tags": [
+                {
+                  "label": "Web",
+                  "permalink": "/software-notebook/docs/tags/web"
+                },
+                {
+                  "label": "HTTP",
+                  "permalink": "/software-notebook/docs/tags/http"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "Web",
+                  "HTTP"
+                ],
+                "last_update": {
+                  "date": "2024/05/14",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Program concepts",
+                "permalink": "/software-notebook/docs/category/program-concepts"
+              },
+              "next": {
+                "title": "Browser rendering",
+                "permalink": "/software-notebook/docs/program-concept/browser-render-flow"
               }
             },
             {
@@ -288,9 +367,9 @@
                 }
               ],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 3,
               "frontMatter": {
-                "sidebar_position": 1,
+                "sidebar_position": 3,
                 "tags": [
                   "design Pattern",
                   "MVC",
@@ -305,6 +384,10 @@
               "previous": {
                 "title": "Browser rendering",
                 "permalink": "/software-notebook/docs/program-concept/browser-render-flow"
+              },
+              "next": {
+                "title": "Interview",
+                "permalink": "/software-notebook/docs/category/interview"
               }
             },
             {
@@ -679,6 +762,10 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "program-concept/cors"
+                  },
+                  {
+                    "type": "doc",
                     "id": "program-concept/browser-render-flow"
                   },
                   {
@@ -690,6 +777,23 @@
                   "type": "generated-index",
                   "slug": "/category/program-concepts",
                   "permalink": "/software-notebook/docs/category/program-concepts"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Interview",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "interview/ask-company"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/interview",
+                  "permalink": "/software-notebook/docs/category/interview"
                 }
               }
             ]

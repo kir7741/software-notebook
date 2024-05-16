@@ -26,6 +26,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "interview/ask-company",
+              "path": "/software-notebook/docs/interview/ask-company",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/software-notebook/docs/intro",
               "sidebar": "tutorialSidebar"
@@ -38,6 +43,11 @@
             {
               "id": "program-concept/browser-render-flow",
               "path": "/software-notebook/docs/program-concept/browser-render-flow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "program-concept/cors",
+              "path": "/software-notebook/docs/program-concept/cors",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -123,6 +133,11 @@
             {
               "id": "/category/program-concepts",
               "path": "/software-notebook/docs/category/program-concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/interview",
+              "path": "/software-notebook/docs/category/interview",
               "sidebar": "tutorialSidebar"
             }
           ],

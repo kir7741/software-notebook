@@ -104,11 +104,11 @@ export default [
   },
   {
     path: '/software-notebook/docs',
-    component: ComponentCreator('/software-notebook/docs', 'a51'),
+    component: ComponentCreator('/software-notebook/docs', '6de'),
     routes: [
       {
         path: '/software-notebook/docs',
-        component: ComponentCreator('/software-notebook/docs', '118'),
+        component: ComponentCreator('/software-notebook/docs', '9ec'),
         routes: [
           {
             path: '/software-notebook/docs/tags',
@@ -161,6 +161,16 @@ export default [
             exact: true
           },
           {
+            path: '/software-notebook/docs/tags/http',
+            component: ComponentCreator('/software-notebook/docs/tags/http', '866'),
+            exact: true
+          },
+          {
+            path: '/software-notebook/docs/tags/interview',
+            component: ComponentCreator('/software-notebook/docs/tags/interview', '924'),
+            exact: true
+          },
+          {
             path: '/software-notebook/docs/tags/java-script',
             component: ComponentCreator('/software-notebook/docs/tags/java-script', '381'),
             exact: true
@@ -176,8 +186,13 @@ export default [
             exact: true
           },
           {
+            path: '/software-notebook/docs/tags/web',
+            component: ComponentCreator('/software-notebook/docs/tags/web', '175'),
+            exact: true
+          },
+          {
             path: '/software-notebook/docs',
-            component: ComponentCreator('/software-notebook/docs', 'aa5'),
+            component: ComponentCreator('/software-notebook/docs', 'e72'),
             routes: [
               {
                 path: '/software-notebook/docs/category/database',
@@ -194,6 +209,12 @@ export default [
               {
                 path: '/software-notebook/docs/category/gorm',
                 component: ComponentCreator('/software-notebook/docs/category/gorm', 'ebb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/category/interview',
+                component: ComponentCreator('/software-notebook/docs/category/interview', '82e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -246,6 +267,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/software-notebook/docs/interview/ask-company',
+                component: ComponentCreator('/software-notebook/docs/interview/ask-company', '94e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/software-notebook/docs/intro',
                 component: ComponentCreator('/software-notebook/docs/intro', 'bd1'),
                 exact: true,
@@ -260,6 +287,12 @@ export default [
               {
                 path: '/software-notebook/docs/program-concept/browser-render-flow',
                 component: ComponentCreator('/software-notebook/docs/program-concept/browser-render-flow', '028'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/program-concept/cors',
+                component: ComponentCreator('/software-notebook/docs/program-concept/cors', '93b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

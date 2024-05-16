@@ -171,6 +171,13 @@
         "items": [
           {
             "type": "link",
+            "label": "CORS",
+            "href": "/software-notebook/docs/program-concept/cors",
+            "docId": "program-concept/cors",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "Browser rendering",
             "href": "/software-notebook/docs/program-concept/browser-render-flow",
             "docId": "program-concept/browser-render-flow",
@@ -185,6 +192,22 @@
           }
         ],
         "href": "/software-notebook/docs/category/program-concepts"
+      },
+      {
+        "type": "category",
+        "label": "Interview",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "面試要確認的問題",
+            "href": "/software-notebook/docs/interview/ask-company",
+            "docId": "interview/ask-company",
+            "unlisted": false
+          }
+        ],
+        "href": "/software-notebook/docs/category/interview"
       }
     ]
   },
@@ -207,6 +230,12 @@
       "description": "Installation",
       "sidebar": "tutorialSidebar"
     },
+    "interview/ask-company": {
+      "id": "interview/ask-company",
+      "title": "面試要確認的問題",
+      "description": "（ㄧ）、工作條件的排名",
+      "sidebar": "tutorialSidebar"
+    },
     "intro": {
       "id": "intro",
       "title": "Tutorial Intro",
@@ -223,6 +252,12 @@
       "id": "program-concept/browser-render-flow",
       "title": "Browser rendering",
       "description": "當你在瀏覽器輸入網址後，會發生什麼？",
+      "sidebar": "tutorialSidebar"
+    },
+    "program-concept/cors": {
+      "id": "program-concept/cors",
+      "title": "CORS",
+      "description": "什麼是同源政策（Same-Origin Policy）？",
       "sidebar": "tutorialSidebar"
     },
     "program-concept/mvc-vs-mvp": {

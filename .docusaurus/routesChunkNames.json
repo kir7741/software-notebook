@@ -205,13 +205,13 @@
     },
     "content": "content---software-notebook-markdown-page-393-362"
   },
-  "/software-notebook/docs-a51": {
+  "/software-notebook/docs-6de": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---software-notebook-docs-348-744"
     }
   },
-  "/software-notebook/docs-118": {
+  "/software-notebook/docs-9ec": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---software-notebook-docs-935-7a9"
   },
@@ -255,6 +255,14 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-html-729-f49"
   },
+  "/software-notebook/docs/tags/http-866": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-http-8-c-5-61f"
+  },
+  "/software-notebook/docs/tags/interview-924": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-interviewffe-271"
+  },
   "/software-notebook/docs/tags/java-script-381": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-java-script-52-b-a60"
@@ -267,7 +275,11 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-mvvm-55-a-685"
   },
-  "/software-notebook/docs-aa5": {
+  "/software-notebook/docs/tags/web-175": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-webe-07-3ab"
+  },
+  "/software-notebook/docs-e72": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/software-notebook/docs/category/database-109": {
@@ -281,6 +293,10 @@
   "/software-notebook/docs/category/gorm-ebb": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-gormbd-3-50b"
+  },
+  "/software-notebook/docs/category/interview-82e": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-interviewe-68-878"
   },
   "/software-notebook/docs/category/javascript-72b": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -314,6 +330,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-golang-gorm-gorm-install-1-b-4-9b6"
   },
+  "/software-notebook/docs/interview/ask-company-94e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-interview-ask-company-1-a-7-119"
+  },
   "/software-notebook/docs/intro-bd1": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-intro-0-e-3-bfc"
@@ -325,6 +345,10 @@
   "/software-notebook/docs/program-concept/browser-render-flow-028": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-program-concept-browser-render-flow-523-61d"
+  },
+  "/software-notebook/docs/program-concept/cors-93b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-program-concept-corsef-7-5d7"
   },
   "/software-notebook/docs/program-concept/mvc-vs-mvp-cbd": {
     "__comp": "__comp---theme-doc-item-178-a40",
