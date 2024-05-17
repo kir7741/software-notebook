@@ -104,11 +104,11 @@ export default [
   },
   {
     path: '/software-notebook/docs',
-    component: ComponentCreator('/software-notebook/docs', '6de'),
+    component: ComponentCreator('/software-notebook/docs', '002'),
     routes: [
       {
         path: '/software-notebook/docs',
-        component: ComponentCreator('/software-notebook/docs', '9ec'),
+        component: ComponentCreator('/software-notebook/docs', 'a50'),
         routes: [
           {
             path: '/software-notebook/docs/tags',
@@ -192,7 +192,7 @@ export default [
           },
           {
             path: '/software-notebook/docs',
-            component: ComponentCreator('/software-notebook/docs', 'e72'),
+            component: ComponentCreator('/software-notebook/docs', '777'),
             routes: [
               {
                 path: '/software-notebook/docs/category/database',
@@ -281,6 +281,12 @@ export default [
               {
                 path: '/software-notebook/docs/javascript/set',
                 component: ComponentCreator('/software-notebook/docs/javascript/set', 'f98'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/javascript/strict-mode',
+                component: ComponentCreator('/software-notebook/docs/javascript/strict-mode', '908'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

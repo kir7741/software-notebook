@@ -102,6 +102,13 @@
             "href": "/software-notebook/docs/javascript/set",
             "docId": "javascript/set",
             "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Strict Mode",
+            "href": "/software-notebook/docs/javascript/strict-mode",
+            "docId": "javascript/strict-mode",
+            "unlisted": false
           }
         ],
         "href": "/software-notebook/docs/category/javascript"
@@ -246,6 +253,12 @@
       "id": "javascript/set",
       "title": "Set",
       "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "javascript/strict-mode": {
+      "id": "javascript/strict-mode",
+      "title": "Strict Mode",
+      "description": "什麼是嚴格模式（Strict Mode）？",
       "sidebar": "tutorialSidebar"
     },
     "program-concept/browser-render-flow": {

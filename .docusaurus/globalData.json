@@ -41,6 +41,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "javascript/strict-mode",
+              "path": "/software-notebook/docs/javascript/strict-mode",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "program-concept/browser-render-flow",
               "path": "/software-notebook/docs/program-concept/browser-render-flow",
               "sidebar": "tutorialSidebar"

@@ -244,6 +244,45 @@
                 "permalink": "/software-notebook/docs/category/javascript"
               },
               "next": {
+                "title": "Strict Mode",
+                "permalink": "/software-notebook/docs/javascript/strict-mode"
+              }
+            },
+            {
+              "id": "javascript/strict-mode",
+              "title": "Strict Mode",
+              "description": "什麼是嚴格模式（Strict Mode）？",
+              "source": "@site/docs/javascript/strict-mode.md",
+              "sourceDirName": "javascript",
+              "slug": "/javascript/strict-mode",
+              "permalink": "/software-notebook/docs/javascript/strict-mode",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/javascript/strict-mode.md",
+              "tags": [
+                {
+                  "label": "JavaScript",
+                  "permalink": "/software-notebook/docs/tags/java-script"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "JavaScript"
+                ],
+                "last_update": {
+                  "date": "2024/05/17",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Set",
+                "permalink": "/software-notebook/docs/javascript/set"
+              },
+              "next": {
                 "title": "Database",
                 "permalink": "/software-notebook/docs/category/database"
               }
@@ -682,6 +721,10 @@
                   {
                     "type": "doc",
                     "id": "javascript/set"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "javascript/strict-mode"
                   }
                 ],
                 "link": {

@@ -205,13 +205,13 @@
     },
     "content": "content---software-notebook-markdown-page-393-362"
   },
-  "/software-notebook/docs-6de": {
+  "/software-notebook/docs-002": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---software-notebook-docs-348-744"
     }
   },
-  "/software-notebook/docs-9ec": {
+  "/software-notebook/docs-a50": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---software-notebook-docs-935-7a9"
   },
@@ -279,7 +279,7 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-webe-07-3ab"
   },
-  "/software-notebook/docs-e72": {
+  "/software-notebook/docs-777": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/software-notebook/docs/category/database-109": {
@@ -341,6 +341,10 @@
   "/software-notebook/docs/javascript/set-f98": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-javascript-set-08-d-25b"
+  },
+  "/software-notebook/docs/javascript/strict-mode-908": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-javascript-strict-mode-284-613"
   },
   "/software-notebook/docs/program-concept/browser-render-flow-028": {
     "__comp": "__comp---theme-doc-item-178-a40",
