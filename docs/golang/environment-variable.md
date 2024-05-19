@@ -160,3 +160,42 @@ func main() {
 }
 ```
 
+### 編譯時的環境變數
+
+然而在編譯時，我們無法使用上述從指令中帶入環境變數的方式來加上環境變數，這時候可以使用 `-ldflags` 這個參數
+
+```bash
+$ go build -ldflags "-X main.APP_ENV=develop" 
+```
+
+並且在 go 的程式碼中建立一個全域變數，來接收這個環境變數
+
+```go
+
+package main
+
+import (
+  "fmt"
+)
+
+var APP_ENV string
+
+func main() {
+  fmt.Println(APP_ENV)
+
+  // 預設為 develop 環境
+  if env == "" {
+    env = "develop"
+  }
+
+  // 根據環境讀取不同的 .env 檔案
+  err := godotenv.Load(".env." + env)
+  if err != nil {
+    fmt.Println("Error loading .env file")
+  }
+
+  fmt.Println("database: ", os.Getenv("database"))
+  // mysql
+}
+```
+
