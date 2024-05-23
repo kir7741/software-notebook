@@ -181,7 +181,7 @@ import (
 var APP_ENV string
 
 func main() {
-  fmt.Println(APP_ENV)
+  fmt.Println(APP_ENV) // develop
 
   // 預設為 develop 環境
   if env == "" {
