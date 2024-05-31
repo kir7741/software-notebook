@@ -210,6 +210,94 @@
               }
             },
             {
+              "id": "javascript/promise/implement-delay",
+              "title": "使用 promise 實作 delay",
+              "description": "實作上算是相對單純，我們只需要利用 setTimeout 來處理 promise 的 resolve 就好",
+              "source": "@site/docs/javascript/promise/implement-delay.md",
+              "sourceDirName": "javascript/promise",
+              "slug": "/javascript/promise/implement-delay",
+              "permalink": "/software-notebook/docs/javascript/promise/implement-delay",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/javascript/promise/implement-delay.md",
+              "tags": [
+                {
+                  "label": "JavaScript",
+                  "permalink": "/software-notebook/docs/tags/java-script"
+                },
+                {
+                  "label": "Promise",
+                  "permalink": "/software-notebook/docs/tags/promise"
+                },
+                {
+                  "label": "delay",
+                  "permalink": "/software-notebook/docs/tags/delay"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "JavaScript",
+                  "Promise",
+                  "delay"
+                ],
+                "last_update": {
+                  "date": "2024/05/31",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Promise",
+                "permalink": "/software-notebook/docs/category/promise"
+              },
+              "next": {
+                "title": "實作 Promise",
+                "permalink": "/software-notebook/docs/javascript/promise/implement-promise"
+              }
+            },
+            {
+              "id": "javascript/promise/implement-promise",
+              "title": "實作 Promise",
+              "description": "連結",
+              "source": "@site/docs/javascript/promise/implement-promise.md",
+              "sourceDirName": "javascript/promise",
+              "slug": "/javascript/promise/implement-promise",
+              "permalink": "/software-notebook/docs/javascript/promise/implement-promise",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/javascript/promise/implement-promise.md",
+              "tags": [
+                {
+                  "label": "JavaScript",
+                  "permalink": "/software-notebook/docs/tags/java-script"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "JavaScript"
+                ],
+                "last_update": {
+                  "date": "2024/05/31",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "使用 promise 實作 delay",
+                "permalink": "/software-notebook/docs/javascript/promise/implement-delay"
+              },
+              "next": {
+                "title": "Set",
+                "permalink": "/software-notebook/docs/javascript/set"
+              }
+            },
+            {
               "id": "javascript/set",
               "title": "Set",
               "description": "",
@@ -227,9 +315,9 @@
                 }
               ],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 2,
               "frontMatter": {
-                "sidebar_position": 1,
+                "sidebar_position": 2,
                 "tags": [
                   "JavaScript"
                 ],
@@ -240,8 +328,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "JavaScript",
-                "permalink": "/software-notebook/docs/category/javascript"
+                "title": "實作 Promise",
+                "permalink": "/software-notebook/docs/javascript/promise/implement-promise"
               },
               "next": {
                 "title": "Strict Mode",
@@ -266,9 +354,9 @@
                 }
               ],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 3,
               "frontMatter": {
-                "sidebar_position": 1,
+                "sidebar_position": 3,
                 "tags": [
                   "JavaScript"
                 ],
@@ -718,6 +806,27 @@
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
+                  {
+                    "type": "category",
+                    "label": "Promise",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "javascript/promise/implement-delay"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "javascript/promise/implement-promise"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/promise",
+                      "permalink": "/software-notebook/docs/category/promise"
+                    }
+                  },
                   {
                     "type": "doc",
                     "id": "javascript/set"

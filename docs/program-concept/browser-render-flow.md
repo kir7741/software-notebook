@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 tags:
   - HTML
   - DNS
@@ -74,9 +74,12 @@ last_update:
 
 頁面渲染的過程中會發生以下幾點事情：
 
-- DOM
-- CSSOM
-- Render Tree
-- Layout
-- Paint
+1. DOM
+> 根據 HTML 的內容，產生相對應結構（樹狀結構）的過程
+2. CSSOM - 根據 CSS 的內容，對應產生相對應的結構
+> 跟 DOM 類似，一樣會產生出樹狀結構。而在沒有 JavaScript 影響的狀況下，DOM 以及 CSSOM 是可以同時建構的，但如果在解析過程遇到 JavaScript，會先去執行 JS，這樣順序就會變成 DOM > JS > DOM > CSSOM。但如果是 JS 的執行中有變更到 CSS 的話，則需要等 CSSOM 執行完畢，才能更新 CSS，順序就會變成 DOM > JS > CSSOM > JS > DOM。
+3. Render Tree
+> 這個過程中會將 DOM 以及 CSSOM 組合起來，會從 DOM 的 root 開始開始
+4. Layout
+5. Paint
 

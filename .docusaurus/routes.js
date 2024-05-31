@@ -104,11 +104,11 @@ export default [
   },
   {
     path: '/software-notebook/docs',
-    component: ComponentCreator('/software-notebook/docs', '002'),
+    component: ComponentCreator('/software-notebook/docs', 'a85'),
     routes: [
       {
         path: '/software-notebook/docs',
-        component: ComponentCreator('/software-notebook/docs', 'a50'),
+        component: ComponentCreator('/software-notebook/docs', '5a0'),
         routes: [
           {
             path: '/software-notebook/docs/tags',
@@ -123,6 +123,11 @@ export default [
           {
             path: '/software-notebook/docs/tags/database',
             component: ComponentCreator('/software-notebook/docs/tags/database', '016'),
+            exact: true
+          },
+          {
+            path: '/software-notebook/docs/tags/delay',
+            component: ComponentCreator('/software-notebook/docs/tags/delay', 'c0c'),
             exact: true
           },
           {
@@ -186,13 +191,18 @@ export default [
             exact: true
           },
           {
+            path: '/software-notebook/docs/tags/promise',
+            component: ComponentCreator('/software-notebook/docs/tags/promise', 'cdd'),
+            exact: true
+          },
+          {
             path: '/software-notebook/docs/tags/web',
             component: ComponentCreator('/software-notebook/docs/tags/web', '175'),
             exact: true
           },
           {
             path: '/software-notebook/docs',
-            component: ComponentCreator('/software-notebook/docs', '777'),
+            component: ComponentCreator('/software-notebook/docs', 'dbf'),
             routes: [
               {
                 path: '/software-notebook/docs/category/database',
@@ -237,6 +247,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/software-notebook/docs/category/promise',
+                component: ComponentCreator('/software-notebook/docs/category/promise', '633'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/software-notebook/docs/category/tutorial---basics',
                 component: ComponentCreator('/software-notebook/docs/category/tutorial---basics', 'efe'),
                 exact: true,
@@ -275,6 +291,18 @@ export default [
               {
                 path: '/software-notebook/docs/intro',
                 component: ComponentCreator('/software-notebook/docs/intro', 'bd1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/javascript/promise/implement-delay',
+                component: ComponentCreator('/software-notebook/docs/javascript/promise/implement-delay', '1ed'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/javascript/promise/implement-promise',
+                component: ComponentCreator('/software-notebook/docs/javascript/promise/implement-promise', 'f6e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

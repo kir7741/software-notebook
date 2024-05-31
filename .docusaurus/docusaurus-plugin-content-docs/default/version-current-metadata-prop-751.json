@@ -97,6 +97,29 @@
         "collapsed": true,
         "items": [
           {
+            "type": "category",
+            "label": "Promise",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "使用 promise 實作 delay",
+                "href": "/software-notebook/docs/javascript/promise/implement-delay",
+                "docId": "javascript/promise/implement-delay",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "實作 Promise",
+                "href": "/software-notebook/docs/javascript/promise/implement-promise",
+                "docId": "javascript/promise/implement-promise",
+                "unlisted": false
+              }
+            ],
+            "href": "/software-notebook/docs/category/promise"
+          },
+          {
             "type": "link",
             "label": "Set",
             "href": "/software-notebook/docs/javascript/set",
@@ -247,6 +270,18 @@
       "id": "intro",
       "title": "Tutorial Intro",
       "description": "Let's discover Docusaurus in less than 5 minutes.",
+      "sidebar": "tutorialSidebar"
+    },
+    "javascript/promise/implement-delay": {
+      "id": "javascript/promise/implement-delay",
+      "title": "使用 promise 實作 delay",
+      "description": "實作上算是相對單純，我們只需要利用 setTimeout 來處理 promise 的 resolve 就好",
+      "sidebar": "tutorialSidebar"
+    },
+    "javascript/promise/implement-promise": {
+      "id": "javascript/promise/implement-promise",
+      "title": "實作 Promise",
+      "description": "連結",
       "sidebar": "tutorialSidebar"
     },
     "javascript/set": {

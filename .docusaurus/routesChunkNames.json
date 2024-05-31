@@ -205,13 +205,13 @@
     },
     "content": "content---software-notebook-markdown-page-393-362"
   },
-  "/software-notebook/docs-002": {
+  "/software-notebook/docs-a85": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---software-notebook-docs-348-744"
     }
   },
-  "/software-notebook/docs-a50": {
+  "/software-notebook/docs-5a0": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---software-notebook-docs-935-7a9"
   },
@@ -226,6 +226,10 @@
   "/software-notebook/docs/tags/database-016": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-database-9-af-ead"
+  },
+  "/software-notebook/docs/tags/delay-c0c": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-delaya-7-a-9e3"
   },
   "/software-notebook/docs/tags/design-pattern-5b2": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
@@ -275,11 +279,15 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-mvvm-55-a-685"
   },
+  "/software-notebook/docs/tags/promise-cdd": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-promise-9-a-3-503"
+  },
   "/software-notebook/docs/tags/web-175": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-webe-07-3ab"
   },
-  "/software-notebook/docs-777": {
+  "/software-notebook/docs-dbf": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/software-notebook/docs/category/database-109": {
@@ -310,6 +318,10 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-program-conceptsbc-8-ade"
   },
+  "/software-notebook/docs/category/promise-633": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-promisefab-93e"
+  },
   "/software-notebook/docs/category/tutorial---basics-efe": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-tutorial-basics-7-a-1-5d6"
@@ -337,6 +349,14 @@
   "/software-notebook/docs/intro-bd1": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-intro-0-e-3-bfc"
+  },
+  "/software-notebook/docs/javascript/promise/implement-delay-1ed": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-javascript-promise-implement-delay-35-b-8f5"
+  },
+  "/software-notebook/docs/javascript/promise/implement-promise-f6e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-javascript-promise-implement-promise-4-d-7-4f9"
   },
   "/software-notebook/docs/javascript/set-f98": {
     "__comp": "__comp---theme-doc-item-178-a40",

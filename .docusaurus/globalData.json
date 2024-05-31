@@ -36,6 +36,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "javascript/promise/implement-delay",
+              "path": "/software-notebook/docs/javascript/promise/implement-delay",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "javascript/promise/implement-promise",
+              "path": "/software-notebook/docs/javascript/promise/implement-promise",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "javascript/set",
               "path": "/software-notebook/docs/javascript/set",
               "sidebar": "tutorialSidebar"
@@ -113,6 +123,11 @@
             {
               "id": "/category/javascript",
               "path": "/software-notebook/docs/category/javascript",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/promise",
+              "path": "/software-notebook/docs/category/promise",
               "sidebar": "tutorialSidebar"
             },
             {
