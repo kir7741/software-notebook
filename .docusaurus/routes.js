@@ -104,15 +104,25 @@ export default [
   },
   {
     path: '/software-notebook/docs',
-    component: ComponentCreator('/software-notebook/docs', 'a85'),
+    component: ComponentCreator('/software-notebook/docs', '725'),
     routes: [
       {
         path: '/software-notebook/docs',
-        component: ComponentCreator('/software-notebook/docs', '5a0'),
+        component: ComponentCreator('/software-notebook/docs', '322'),
         routes: [
           {
             path: '/software-notebook/docs/tags',
             component: ComponentCreator('/software-notebook/docs/tags', '156'),
+            exact: true
+          },
+          {
+            path: '/software-notebook/docs/tags/aws',
+            component: ComponentCreator('/software-notebook/docs/tags/aws', '797'),
+            exact: true
+          },
+          {
+            path: '/software-notebook/docs/tags/big-int',
+            component: ComponentCreator('/software-notebook/docs/tags/big-int', '02a'),
             exact: true
           },
           {
@@ -133,6 +143,11 @@ export default [
           {
             path: '/software-notebook/docs/tags/design-pattern',
             component: ComponentCreator('/software-notebook/docs/tags/design-pattern', '5b2'),
+            exact: true
+          },
+          {
+            path: '/software-notebook/docs/tags/devops',
+            component: ComponentCreator('/software-notebook/docs/tags/devops', '3c7'),
             exact: true
           },
           {
@@ -196,17 +211,34 @@ export default [
             exact: true
           },
           {
+            path: '/software-notebook/docs/tags/s-3',
+            component: ComponentCreator('/software-notebook/docs/tags/s-3', '749'),
+            exact: true
+          },
+          {
             path: '/software-notebook/docs/tags/web',
             component: ComponentCreator('/software-notebook/docs/tags/web', '175'),
             exact: true
           },
           {
             path: '/software-notebook/docs',
-            component: ComponentCreator('/software-notebook/docs', 'dbf'),
+            component: ComponentCreator('/software-notebook/docs', '10a'),
             routes: [
+              {
+                path: '/software-notebook/docs/category/aws',
+                component: ComponentCreator('/software-notebook/docs/category/aws', '25b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/software-notebook/docs/category/database',
                 component: ComponentCreator('/software-notebook/docs/category/database', '109'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/category/devops',
+                component: ComponentCreator('/software-notebook/docs/category/devops', '7d7'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -271,6 +303,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/software-notebook/docs/Devops/aws/aws-s3',
+                component: ComponentCreator('/software-notebook/docs/Devops/aws/aws-s3', '7f4'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/software-notebook/docs/golang/environment-variable',
                 component: ComponentCreator('/software-notebook/docs/golang/environment-variable', '835'),
                 exact: true,
@@ -291,6 +329,12 @@ export default [
               {
                 path: '/software-notebook/docs/intro',
                 component: ComponentCreator('/software-notebook/docs/intro', 'bd1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/javascript/big-int',
+                component: ComponentCreator('/software-notebook/docs/javascript/big-int', '25a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

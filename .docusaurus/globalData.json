@@ -16,6 +16,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Devops/aws/aws-s3",
+              "path": "/software-notebook/docs/Devops/aws/aws-s3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "golang/environment-variable",
               "path": "/software-notebook/docs/golang/environment-variable",
               "sidebar": "tutorialSidebar"
@@ -33,6 +38,11 @@
             {
               "id": "intro",
               "path": "/software-notebook/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "javascript/big-int",
+              "path": "/software-notebook/docs/javascript/big-int",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -158,6 +168,16 @@
             {
               "id": "/category/interview",
               "path": "/software-notebook/docs/category/interview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/devops",
+              "path": "/software-notebook/docs/category/devops",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/aws",
+              "path": "/software-notebook/docs/category/aws",
               "sidebar": "tutorialSidebar"
             }
           ],

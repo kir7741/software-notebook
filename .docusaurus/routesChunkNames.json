@@ -205,19 +205,27 @@
     },
     "content": "content---software-notebook-markdown-page-393-362"
   },
-  "/software-notebook/docs-a85": {
+  "/software-notebook/docs-725": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---software-notebook-docs-348-744"
     }
   },
-  "/software-notebook/docs-5a0": {
+  "/software-notebook/docs-322": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---software-notebook-docs-935-7a9"
   },
   "/software-notebook/docs/tags-156": {
     "__comp": "__comp---theme-doc-tags-list-page-372-89e",
     "tags": "tags---software-notebook-docs-tags-559-f66"
+  },
+  "/software-notebook/docs/tags/aws-797": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-aws-161-4c6"
+  },
+  "/software-notebook/docs/tags/big-int-02a": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-big-intd-6-f-241"
   },
   "/software-notebook/docs/tags/css-reflow-da5": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
@@ -234,6 +242,10 @@
   "/software-notebook/docs/tags/design-pattern-5b2": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-design-pattern-264-ac1"
+  },
+  "/software-notebook/docs/tags/devops-3c7": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-devopsba-2-65a"
   },
   "/software-notebook/docs/tags/dns-1f5": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
@@ -283,16 +295,28 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-promise-9-a-3-503"
   },
+  "/software-notebook/docs/tags/s-3-749": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-s-3-d-15-cb9"
+  },
   "/software-notebook/docs/tags/web-175": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-webe-07-3ab"
   },
-  "/software-notebook/docs-dbf": {
+  "/software-notebook/docs-10a": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/software-notebook/docs/category/aws-25b": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-awsdf-6-267"
   },
   "/software-notebook/docs/category/database-109": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-databaseb-43-3a3"
+  },
+  "/software-notebook/docs/category/devops-7d7": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-devopsad-6-7a1"
   },
   "/software-notebook/docs/category/golang-f07": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -334,6 +358,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-database-postgresql-postgresql-install-0-ea-5c3"
   },
+  "/software-notebook/docs/Devops/aws/aws-s3-7f4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-devops-aws-aws-s-3675-f3d"
+  },
   "/software-notebook/docs/golang/environment-variable-835": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-golang-environment-variablea-79-6ec"
@@ -349,6 +377,10 @@
   "/software-notebook/docs/intro-bd1": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-intro-0-e-3-bfc"
+  },
+  "/software-notebook/docs/javascript/big-int-25a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-javascript-big-int-0-dd-7aa"
   },
   "/software-notebook/docs/javascript/promise/implement-delay-1ed": {
     "__comp": "__comp---theme-doc-item-178-a40",

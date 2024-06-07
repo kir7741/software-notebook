@@ -59,6 +59,51 @@
               }
             },
             {
+              "id": "Devops/aws/aws-s3",
+              "title": "S3",
+              "description": "",
+              "source": "@site/docs/Devops/aws/aws-s3.md",
+              "sourceDirName": "Devops/aws",
+              "slug": "/Devops/aws/aws-s3",
+              "permalink": "/software-notebook/docs/Devops/aws/aws-s3",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Devops/aws/aws-s3.md",
+              "tags": [
+                {
+                  "label": "Devops",
+                  "permalink": "/software-notebook/docs/tags/devops"
+                },
+                {
+                  "label": "AWS",
+                  "permalink": "/software-notebook/docs/tags/aws"
+                },
+                {
+                  "label": "S3",
+                  "permalink": "/software-notebook/docs/tags/s-3"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "Devops",
+                  "AWS",
+                  "S3"
+                ],
+                "last_update": {
+                  "date": "2024/06/04",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "AWS",
+                "permalink": "/software-notebook/docs/category/aws"
+              }
+            },
+            {
               "id": "golang/environment-variable",
               "title": "Golang 環境變數",
               "description": "從指令中帶入環境變數",
@@ -184,6 +229,10 @@
               "previous": {
                 "title": "Interview",
                 "permalink": "/software-notebook/docs/category/interview"
+              },
+              "next": {
+                "title": "Devops",
+                "permalink": "/software-notebook/docs/category/devops"
               }
             },
             {
@@ -207,6 +256,50 @@
               "next": {
                 "title": "Tutorial - Basics",
                 "permalink": "/software-notebook/docs/category/tutorial---basics"
+              }
+            },
+            {
+              "id": "javascript/big-int",
+              "title": "BigInt",
+              "description": "什麼是 BigInt？",
+              "source": "@site/docs/javascript/big-int.md",
+              "sourceDirName": "javascript",
+              "slug": "/javascript/big-int",
+              "permalink": "/software-notebook/docs/javascript/big-int",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/javascript/big-int.md",
+              "tags": [
+                {
+                  "label": "JavaScript",
+                  "permalink": "/software-notebook/docs/tags/java-script"
+                },
+                {
+                  "label": "BigInt",
+                  "permalink": "/software-notebook/docs/tags/big-int"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "tags": [
+                  "JavaScript",
+                  "BigInt"
+                ],
+                "last_update": {
+                  "date": "2024/06/03",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Set",
+                "permalink": "/software-notebook/docs/javascript/set"
+              },
+              "next": {
+                "title": "Strict Mode",
+                "permalink": "/software-notebook/docs/javascript/strict-mode"
               }
             },
             {
@@ -332,8 +425,8 @@
                 "permalink": "/software-notebook/docs/javascript/promise/implement-promise"
               },
               "next": {
-                "title": "Strict Mode",
-                "permalink": "/software-notebook/docs/javascript/strict-mode"
+                "title": "BigInt",
+                "permalink": "/software-notebook/docs/javascript/big-int"
               }
             },
             {
@@ -354,9 +447,9 @@
                 }
               ],
               "version": "current",
-              "sidebarPosition": 3,
+              "sidebarPosition": 4,
               "frontMatter": {
-                "sidebar_position": 3,
+                "sidebar_position": 4,
                 "tags": [
                   "JavaScript"
                 ],
@@ -367,8 +460,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Set",
-                "permalink": "/software-notebook/docs/javascript/set"
+                "title": "BigInt",
+                "permalink": "/software-notebook/docs/javascript/big-int"
               },
               "next": {
                 "title": "Database",
@@ -833,6 +926,10 @@
                   },
                   {
                     "type": "doc",
+                    "id": "javascript/big-int"
+                  },
+                  {
+                    "type": "doc",
                     "id": "javascript/strict-mode"
                   }
                 ],
@@ -946,6 +1043,36 @@
                   "type": "generated-index",
                   "slug": "/category/interview",
                   "permalink": "/software-notebook/docs/category/interview"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Devops",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "AWS",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Devops/aws/aws-s3"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/aws",
+                      "permalink": "/software-notebook/docs/category/aws"
+                    }
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/devops",
+                  "permalink": "/software-notebook/docs/category/devops"
                 }
               }
             ]
