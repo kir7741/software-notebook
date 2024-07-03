@@ -104,15 +104,20 @@ export default [
   },
   {
     path: '/software-notebook/docs',
-    component: ComponentCreator('/software-notebook/docs', '725'),
+    component: ComponentCreator('/software-notebook/docs', 'd88'),
     routes: [
       {
         path: '/software-notebook/docs',
-        component: ComponentCreator('/software-notebook/docs', '322'),
+        component: ComponentCreator('/software-notebook/docs', 'eef'),
         routes: [
           {
             path: '/software-notebook/docs/tags',
             component: ComponentCreator('/software-notebook/docs/tags', '156'),
+            exact: true
+          },
+          {
+            path: '/software-notebook/docs/tags/accordion',
+            component: ComponentCreator('/software-notebook/docs/tags/accordion', '119'),
             exact: true
           },
           {
@@ -123,6 +128,11 @@ export default [
           {
             path: '/software-notebook/docs/tags/big-int',
             component: ComponentCreator('/software-notebook/docs/tags/big-int', '02a'),
+            exact: true
+          },
+          {
+            path: '/software-notebook/docs/tags/css',
+            component: ComponentCreator('/software-notebook/docs/tags/css', '203'),
             exact: true
           },
           {
@@ -171,6 +181,11 @@ export default [
             exact: true
           },
           {
+            path: '/software-notebook/docs/tags/golang',
+            component: ComponentCreator('/software-notebook/docs/tags/golang', 'd4f'),
+            exact: true
+          },
+          {
             path: '/software-notebook/docs/tags/gorm',
             component: ComponentCreator('/software-notebook/docs/tags/gorm', 'd97'),
             exact: true
@@ -216,17 +231,28 @@ export default [
             exact: true
           },
           {
+            path: '/software-notebook/docs/tags/toggle',
+            component: ComponentCreator('/software-notebook/docs/tags/toggle', '4d7'),
+            exact: true
+          },
+          {
             path: '/software-notebook/docs/tags/web',
             component: ComponentCreator('/software-notebook/docs/tags/web', '175'),
             exact: true
           },
           {
             path: '/software-notebook/docs',
-            component: ComponentCreator('/software-notebook/docs', '10a'),
+            component: ComponentCreator('/software-notebook/docs', 'f92'),
             routes: [
               {
                 path: '/software-notebook/docs/category/aws',
                 component: ComponentCreator('/software-notebook/docs/category/aws', '25b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/category/css',
+                component: ComponentCreator('/software-notebook/docs/category/css', '4e8'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -297,6 +323,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/software-notebook/docs/css/accordion',
+                component: ComponentCreator('/software-notebook/docs/css/accordion', '8a2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/software-notebook/docs/database/postgresql/postgresql-install',
                 component: ComponentCreator('/software-notebook/docs/database/postgresql/postgresql-install', '7f8'),
                 exact: true,
@@ -317,6 +349,12 @@ export default [
               {
                 path: '/software-notebook/docs/golang/gorm/gorm-install',
                 component: ComponentCreator('/software-notebook/docs/golang/gorm/gorm-install', '268'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/software-notebook/docs/golang/instructions',
+                component: ComponentCreator('/software-notebook/docs/golang/instructions', '8cf'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

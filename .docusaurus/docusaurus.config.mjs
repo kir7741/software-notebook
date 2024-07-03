@@ -7,10 +7,10 @@ export default {
   "title": "Joseph Software Notebook",
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-site.example.com",
+  "url": "https://kir7741.github.io",
   "baseUrl": "/software-notebook/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "kir7741.github.io",
+  "projectName": "software-notebook",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {

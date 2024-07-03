@@ -20,6 +20,55 @@
           "contentPathLocalized": "/Users/josephlin/frontend/個人進修/software-notebook/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
+              "id": "css/accordion",
+              "title": "Accordion",
+              "description": "這篇文章將介紹如何使用 CSS 實作 Accordion。",
+              "source": "@site/docs/css/accordion.md",
+              "sourceDirName": "css",
+              "slug": "/css/accordion",
+              "permalink": "/software-notebook/docs/css/accordion",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/css/accordion.md",
+              "tags": [
+                {
+                  "label": "CSS",
+                  "permalink": "/software-notebook/docs/tags/css"
+                },
+                {
+                  "label": "toggle",
+                  "permalink": "/software-notebook/docs/tags/toggle"
+                },
+                {
+                  "label": "Accordion",
+                  "permalink": "/software-notebook/docs/tags/accordion"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "CSS",
+                  "toggle",
+                  "Accordion"
+                ],
+                "last_update": {
+                  "date": "2024/06/15",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "CSS",
+                "permalink": "/software-notebook/docs/category/css"
+              },
+              "next": {
+                "title": "Golang",
+                "permalink": "/software-notebook/docs/category/golang"
+              }
+            },
+            {
               "id": "database/postgresql/postgresql-install",
               "title": "Installation",
               "description": "1. 使用以下指令安裝 PostgreSQL",
@@ -54,8 +103,8 @@
                 "permalink": "/software-notebook/docs/category/postgresql"
               },
               "next": {
-                "title": "Golang",
-                "permalink": "/software-notebook/docs/category/golang"
+                "title": "Interview",
+                "permalink": "/software-notebook/docs/category/interview"
               }
             },
             {
@@ -129,9 +178,9 @@
                 }
               ],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 2,
               "frontMatter": {
-                "sidebar_position": 1,
+                "sidebar_position": 2,
                 "tags": [
                   "env",
                   "dotenv",
@@ -144,8 +193,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Golang",
-                "permalink": "/software-notebook/docs/category/golang"
+                "title": "Golang 指令",
+                "permalink": "/software-notebook/docs/golang/instructions"
               },
               "next": {
                 "title": "Gorm",
@@ -192,8 +241,47 @@
                 "permalink": "/software-notebook/docs/category/gorm"
               },
               "next": {
-                "title": "Program concepts",
-                "permalink": "/software-notebook/docs/category/program-concepts"
+                "title": "Database",
+                "permalink": "/software-notebook/docs/category/database"
+              }
+            },
+            {
+              "id": "golang/instructions",
+              "title": "Golang 指令",
+              "description": "執行程式",
+              "source": "@site/docs/golang/instructions.md",
+              "sourceDirName": "golang",
+              "slug": "/golang/instructions",
+              "permalink": "/software-notebook/docs/golang/instructions",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/golang/instructions.md",
+              "tags": [
+                {
+                  "label": "golang",
+                  "permalink": "/software-notebook/docs/tags/golang"
+                }
+              ],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "tags": [
+                  "golang"
+                ],
+                "last_update": {
+                  "date": "2024/05/02",
+                  "author": "Joseph Lin"
+                }
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Golang",
+                "permalink": "/software-notebook/docs/category/golang"
+              },
+              "next": {
+                "title": "Golang 環境變數",
+                "permalink": "/software-notebook/docs/golang/environment-variable"
               }
             },
             {
@@ -231,8 +319,8 @@
                 "permalink": "/software-notebook/docs/category/interview"
               },
               "next": {
-                "title": "Devops",
-                "permalink": "/software-notebook/docs/category/devops"
+                "title": "Program concepts",
+                "permalink": "/software-notebook/docs/category/program-concepts"
               }
             },
             {
@@ -464,8 +552,8 @@
                 "permalink": "/software-notebook/docs/javascript/big-int"
               },
               "next": {
-                "title": "Database",
-                "permalink": "/software-notebook/docs/category/database"
+                "title": "CSS",
+                "permalink": "/software-notebook/docs/category/css"
               }
             },
             {
@@ -606,8 +694,8 @@
                 "permalink": "/software-notebook/docs/program-concept/browser-render-flow"
               },
               "next": {
-                "title": "Interview",
-                "permalink": "/software-notebook/docs/category/interview"
+                "title": "Devops",
+                "permalink": "/software-notebook/docs/category/devops"
               }
             },
             {
@@ -941,32 +1029,19 @@
               },
               {
                 "type": "category",
-                "label": "Database",
+                "label": "CSS",
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
                   {
-                    "type": "category",
-                    "label": "Postgresql",
-                    "collapsible": true,
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "database/postgresql/postgresql-install"
-                      }
-                    ],
-                    "link": {
-                      "type": "generated-index",
-                      "slug": "/category/postgresql",
-                      "permalink": "/software-notebook/docs/category/postgresql"
-                    }
+                    "type": "doc",
+                    "id": "css/accordion"
                   }
                 ],
                 "link": {
                   "type": "generated-index",
-                  "slug": "/category/database",
-                  "permalink": "/software-notebook/docs/category/database"
+                  "slug": "/category/css",
+                  "permalink": "/software-notebook/docs/category/css"
                 }
               },
               {
@@ -975,6 +1050,10 @@
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
+                  {
+                    "type": "doc",
+                    "id": "golang/instructions"
+                  },
                   {
                     "type": "doc",
                     "id": "golang/environment-variable"
@@ -1005,6 +1084,53 @@
               },
               {
                 "type": "category",
+                "label": "Database",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Postgresql",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "database/postgresql/postgresql-install"
+                      }
+                    ],
+                    "link": {
+                      "type": "generated-index",
+                      "slug": "/category/postgresql",
+                      "permalink": "/software-notebook/docs/category/postgresql"
+                    }
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/database",
+                  "permalink": "/software-notebook/docs/category/database"
+                }
+              },
+              {
+                "type": "category",
+                "label": "Interview",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "interview/ask-company"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/interview",
+                  "permalink": "/software-notebook/docs/category/interview"
+                }
+              },
+              {
+                "type": "category",
                 "label": "Program concepts",
                 "collapsible": true,
                 "collapsed": true,
@@ -1026,23 +1152,6 @@
                   "type": "generated-index",
                   "slug": "/category/program-concepts",
                   "permalink": "/software-notebook/docs/category/program-concepts"
-                }
-              },
-              {
-                "type": "category",
-                "label": "Interview",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "interview/ask-company"
-                  }
-                ],
-                "link": {
-                  "type": "generated-index",
-                  "slug": "/category/interview",
-                  "permalink": "/software-notebook/docs/category/interview"
                 }
               },
               {

@@ -205,19 +205,23 @@
     },
     "content": "content---software-notebook-markdown-page-393-362"
   },
-  "/software-notebook/docs-725": {
+  "/software-notebook/docs-d88": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---software-notebook-docs-348-744"
     }
   },
-  "/software-notebook/docs-322": {
+  "/software-notebook/docs-eef": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---software-notebook-docs-935-7a9"
   },
   "/software-notebook/docs/tags-156": {
     "__comp": "__comp---theme-doc-tags-list-page-372-89e",
     "tags": "tags---software-notebook-docs-tags-559-f66"
+  },
+  "/software-notebook/docs/tags/accordion-119": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-accordion-7-b-8-cd5"
   },
   "/software-notebook/docs/tags/aws-797": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
@@ -226,6 +230,10 @@
   "/software-notebook/docs/tags/big-int-02a": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-big-intd-6-f-241"
+  },
+  "/software-notebook/docs/tags/css-203": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-css-12-f-71a"
   },
   "/software-notebook/docs/tags/css-reflow-da5": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
@@ -263,6 +271,10 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-godotenvdc-2-d1c"
   },
+  "/software-notebook/docs/tags/golang-d4f": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-golang-348-9cf"
+  },
   "/software-notebook/docs/tags/gorm-d97": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-gormaf-6-79f"
@@ -299,16 +311,24 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-s-3-d-15-cb9"
   },
+  "/software-notebook/docs/tags/toggle-4d7": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---software-notebook-docs-tags-toggle-0-e-5-5c0"
+  },
   "/software-notebook/docs/tags/web-175": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---software-notebook-docs-tags-webe-07-3ab"
   },
-  "/software-notebook/docs-10a": {
+  "/software-notebook/docs-f92": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/software-notebook/docs/category/aws-25b": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-awsdf-6-267"
+  },
+  "/software-notebook/docs/category/css-4e8": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-css-796-a68"
   },
   "/software-notebook/docs/category/database-109": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -354,6 +374,10 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---software-notebook-docs-category-tutorial-extras-9-f-7-adb"
   },
+  "/software-notebook/docs/css/accordion-8a2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-css-accordion-5-b-7-8f8"
+  },
   "/software-notebook/docs/database/postgresql/postgresql-install-7f8": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-database-postgresql-postgresql-install-0-ea-5c3"
@@ -369,6 +393,10 @@
   "/software-notebook/docs/golang/gorm/gorm-install-268": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---software-notebook-docs-golang-gorm-gorm-install-1-b-4-9b6"
+  },
+  "/software-notebook/docs/golang/instructions-8cf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---software-notebook-docs-golang-instructions-058-509"
   },
   "/software-notebook/docs/interview/ask-company-94e": {
     "__comp": "__comp---theme-doc-item-178-a40",

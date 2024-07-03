@@ -145,28 +145,19 @@
       },
       {
         "type": "category",
-        "label": "Database",
+        "label": "CSS",
         "collapsible": true,
         "collapsed": true,
         "items": [
           {
-            "type": "category",
-            "label": "Postgresql",
-            "collapsible": true,
-            "collapsed": true,
-            "items": [
-              {
-                "type": "link",
-                "label": "Installation",
-                "href": "/software-notebook/docs/database/postgresql/postgresql-install",
-                "docId": "database/postgresql/postgresql-install",
-                "unlisted": false
-              }
-            ],
-            "href": "/software-notebook/docs/category/postgresql"
+            "type": "link",
+            "label": "Accordion",
+            "href": "/software-notebook/docs/css/accordion",
+            "docId": "css/accordion",
+            "unlisted": false
           }
         ],
-        "href": "/software-notebook/docs/category/database"
+        "href": "/software-notebook/docs/category/css"
       },
       {
         "type": "category",
@@ -174,6 +165,13 @@
         "collapsible": true,
         "collapsed": true,
         "items": [
+          {
+            "type": "link",
+            "label": "Golang 指令",
+            "href": "/software-notebook/docs/golang/instructions",
+            "docId": "golang/instructions",
+            "unlisted": false
+          },
           {
             "type": "link",
             "label": "Golang 環境變數",
@@ -199,6 +197,47 @@
           }
         ],
         "href": "/software-notebook/docs/category/golang"
+      },
+      {
+        "type": "category",
+        "label": "Database",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "Postgresql",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Installation",
+                "href": "/software-notebook/docs/database/postgresql/postgresql-install",
+                "docId": "database/postgresql/postgresql-install",
+                "unlisted": false
+              }
+            ],
+            "href": "/software-notebook/docs/category/postgresql"
+          }
+        ],
+        "href": "/software-notebook/docs/category/database"
+      },
+      {
+        "type": "category",
+        "label": "Interview",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "面試要確認的問題",
+            "href": "/software-notebook/docs/interview/ask-company",
+            "docId": "interview/ask-company",
+            "unlisted": false
+          }
+        ],
+        "href": "/software-notebook/docs/category/interview"
       },
       {
         "type": "category",
@@ -232,22 +271,6 @@
       },
       {
         "type": "category",
-        "label": "Interview",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
-          {
-            "type": "link",
-            "label": "面試要確認的問題",
-            "href": "/software-notebook/docs/interview/ask-company",
-            "docId": "interview/ask-company",
-            "unlisted": false
-          }
-        ],
-        "href": "/software-notebook/docs/category/interview"
-      },
-      {
-        "type": "category",
         "label": "Devops",
         "collapsible": true,
         "collapsed": true,
@@ -274,6 +297,12 @@
     ]
   },
   "docs": {
+    "css/accordion": {
+      "id": "css/accordion",
+      "title": "Accordion",
+      "description": "這篇文章將介紹如何使用 CSS 實作 Accordion。",
+      "sidebar": "tutorialSidebar"
+    },
     "database/postgresql/postgresql-install": {
       "id": "database/postgresql/postgresql-install",
       "title": "Installation",
@@ -296,6 +325,12 @@
       "id": "golang/gorm/gorm-install",
       "title": "Gorm",
       "description": "Installation",
+      "sidebar": "tutorialSidebar"
+    },
+    "golang/instructions": {
+      "id": "golang/instructions",
+      "title": "Golang 指令",
+      "description": "執行程式",
       "sidebar": "tutorialSidebar"
     },
     "interview/ask-company": {

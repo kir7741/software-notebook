@@ -79,7 +79,8 @@ last_update:
 2. CSSOM - 根據 CSS 的內容，對應產生相對應的結構
 > 跟 DOM 類似，一樣會產生出樹狀結構。而在沒有 JavaScript 影響的狀況下，DOM 以及 CSSOM 是可以同時建構的，但如果在解析過程遇到 JavaScript，會先去執行 JS，這樣順序就會變成 DOM > JS > DOM > CSSOM。但如果是 JS 的執行中有變更到 CSS 的話，則需要等 CSSOM 執行完畢，才能更新 CSS，順序就會變成 DOM > JS > CSSOM > JS > DOM。
 3. Render Tree
-> 這個過程中會將 DOM 以及 CSSOM 組合起來，會從 DOM 的 root 開始開始
+> 這個過程中會將 DOM 以及 CSSOM 組合起來，瀏覽器會從 DOM 的 root 開始組合，並從 CSSOM 中找到對應的樣式，最後產生出 Render Tree。並且在這個過程中決定哪些節點要顯示，節點要呈現什麼樣式。像是 `display:none` 就不會出現在 render tree 之中。
 4. Layout
+> Render Tree 之後，我們就有了確切要顯示的節點，瀏覽器一樣會從 Render Tree 產出物的 root 開始，抓取節點的樣式資料，並根據 `box-model` 的機制來製作出節點的絕對、相對位置以及大小。
 5. Paint
-
+> Paint

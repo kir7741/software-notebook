@@ -11,6 +11,11 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "css/accordion",
+              "path": "/software-notebook/docs/css/accordion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "database/postgresql/postgresql-install",
               "path": "/software-notebook/docs/database/postgresql/postgresql-install",
               "sidebar": "tutorialSidebar"
@@ -28,6 +33,11 @@
             {
               "id": "golang/gorm/gorm-install",
               "path": "/software-notebook/docs/golang/gorm/gorm-install",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "golang/instructions",
+              "path": "/software-notebook/docs/golang/instructions",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -141,13 +151,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/database",
-              "path": "/software-notebook/docs/category/database",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/postgresql",
-              "path": "/software-notebook/docs/category/postgresql",
+              "id": "/category/css",
+              "path": "/software-notebook/docs/category/css",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -161,13 +166,23 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/program-concepts",
-              "path": "/software-notebook/docs/category/program-concepts",
+              "id": "/category/database",
+              "path": "/software-notebook/docs/category/database",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/postgresql",
+              "path": "/software-notebook/docs/category/postgresql",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/interview",
               "path": "/software-notebook/docs/category/interview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/program-concepts",
+              "path": "/software-notebook/docs/category/program-concepts",
               "sidebar": "tutorialSidebar"
             },
             {
