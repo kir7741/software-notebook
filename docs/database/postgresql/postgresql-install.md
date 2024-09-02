@@ -2,6 +2,7 @@
 sidebar_position: 1
 tags:
   - database
+  - postgresql
 last_update:
   date: 2024/05/02
   author: Joseph Lin
