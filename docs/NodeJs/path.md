@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 tags:
+  - NodeJs
   - JavaScript
-  - Node
 last_update:
   date: 2024/07/01
   author: Joseph Lin
@@ -35,11 +35,17 @@ const path = require('path');
 
 console.log(path.extname('/xx/yy/zz/index.html')); // .html
 ```
+
 6. path.join($path1, $path2, $path3, ...)：將傳入的路徑字串組合成一個完整的路徑
 
 ```js
 const path = require('path');
 
+console.log(path.join('/xx', '/yy', 'zz')); 
+
+// /xx/yy/zz
+
+```
 
 7. path.parse($path)：將傳入的路徑字串解析成物件
 
