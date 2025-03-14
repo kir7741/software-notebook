@@ -45,3 +45,9 @@ VM 是一個虛擬化技術，可以在一台主機上運行多個虛擬機器�
 
 呈上，如果想要永久保存 Container 上的資料，Docker 提供了 Volumn 這個概念與語法，可以將 Container 的資料夾與本地端的資料夾做映射，這樣就可以在 Container 被刪除後，還可以保留資料。
 
+- anonymous volume：匿名的 Volumn，當你不指定 Volumn 的名稱時，Docker 會自動幫你產生一個隨機的名稱，並且存在某個指定的地方，生命週期會跟著 Container，如果 Container 關閉，資料也會隨著消失，所以主要來儲存一些應用程式執行時需要使用的暫存資料，像是 node_modules。
+
+- name volumn：指定 Volumn 的名稱，這樣可以將資料永久的存在這個 Volumn 即便 Container 停止也可以持續保存。
+
+- bind mount：將本地端的資料夾與 Container 的資料夾做映射，這樣可以在本地端修改檔案，Container 也會同步更新，主要是用在開發環境時，需要讓檔案修改即時反應在 Container 上。
+
