@@ -40,7 +40,7 @@ last_update:
 
 #### connect to another container
 
-- 先使用 docker container inspect ${container_name} 來查看 Container 資訊，裡面有個 NetworkSettings.IPAdress 可以得知這個服務起在哪個 IP 位址，但這個方法的缺點是每次 Container 重啟後，IP 位址會改變。
+- 先使用 docker container inspect `${container_name}` 來查看 Container 資訊，裡面有個 NetworkSettings.IPAdress 可以得知這個服務起在哪個 IP 位址，但這個方法的缺點是每次 Container 重啟後，IP 位址會改變。
 
 - 使用 Docker network：建立一個共通的 network，當多個 Container 都有連接到 network 時，即可以在程式碼內使用 container name 取代 IP 位址，這樣就可以在 Container 內部連線到其他 Container。
 
