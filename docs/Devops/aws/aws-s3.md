@@ -22,7 +22,7 @@ AWS S3（Amazon Simple Storage Service）是一個由 AWS 提供的`物件儲存
 
 ## Related cli
 
-#### 列出 bucket
+#### 1. 列出 bucket
 
 ```bash
 aws s3 ls
@@ -31,7 +31,7 @@ aws s3 ls
 aws s3 ls --profile <your_profile>
 ```
 
-#### 移除指定 bucket 裡的檔案
+#### 2. 移除指定 bucket 裡的檔案
 
 ```bash
 aws s3 rm s3://<your_bucket>/<your_file> --recursive --profile=<your_profile>
@@ -39,7 +39,7 @@ aws s3 rm s3://<your_bucket>/<your_file> --recursive --profile=<your_profile>
 # 當檔案是資料夾時，就需要帶入 --recursive 參數，讓他可以去遍歷資料夾裡面的檔案
 ```
 
-#### 複製(上傳)檔案到 S3
+#### 3. 複製(上傳)檔案到 S3
 
 ```bash
 aws s3 cp <your_file> s3://<your_bucket>/<your_file> --recursive --profile=<your_profile>

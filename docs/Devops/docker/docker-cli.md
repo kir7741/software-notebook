@@ -11,7 +11,7 @@ last_update:
 
 # Docker cli
 
-#### 編譯映像檔
+#### 1. 編譯映像檔
 
 ```bash
 docker build ${path}
@@ -27,7 +27,7 @@ docker build -t ${image_name} ${path} --build-arg ${key}=${value}
 
 還可以在編譯時，帶入參數，這樣可以覆蓋掉 Dockerfile 裡的 ARG
 
-#### 執行映像檔
+#### 2. 執行映像檔
 
 ```bash
 docker run ${image_id}
@@ -59,7 +59,7 @@ docker run -d ${image_id}
 docker run 預設是 attach 模式，可以帶入 `-d` 參數來使用 detach 模式
 
 
-#### 查看容器 (Container)
+#### 3. 查看容器 (Container)
 
 ```bash
 docker ps
@@ -73,7 +73,7 @@ docker ps -a
 # -a 代表 -all，可以查看所有的 Container 狀態
 ```
 
-#### 啟動容器 (Container)
+#### 4. 啟動容器 (Container)
 
 ```bash
 docker start ${container_id}
@@ -93,7 +93,7 @@ docker attach ${container_id}
 
 直接使用 attach 模式來啟動 Container
 
-#### 停止容器 (Container)
+#### 5. 停止容器 (Container)
 
 ```bash
 docker stop ${container_id}
@@ -101,7 +101,7 @@ docker stop ${container_id}
 
 停止正在運行的指定容器
 
-#### 查看 Container 的 log
+#### 6. 查看 Container 的 log
 
 ```bash
 docker logs ${container_id}
@@ -111,7 +111,7 @@ docker logs -f ${container_id}
 
 可以在 detach 模式下查看 Container 的 log，也可以加入 `-f` 參數來持續監控 log 的輸出（等同於進入 attach 模式）。
 
-#### 刪除 Container
+#### 7. 刪除 Container
 
 ```bash
 docker rm ${container_id}
@@ -119,7 +119,7 @@ docker rm ${container_id}
 
 刪除指定的 Container
 
-#### 刪除 Image
+#### 8. 刪除 Image
 
 ```bash
 docker rmi ${image_id}
@@ -133,7 +133,7 @@ docker image prune
 
 刪除所有沒有被使用的 image
 
-#### 查看卷（Volumn）
+#### 9. 查看卷（Volumn）
 
 ```bash
 docker volume ls
@@ -141,7 +141,7 @@ docker volume ls
 
 查看目前所有的 volumn
 
-#### 建立卷的映射
+#### 10. 建立卷的映射
 
 ```bash
 
@@ -159,7 +159,7 @@ Volumn 跟 Bind mount 的差別在於，前者由 Docker 來管理，僅用於�
 
 `$(pwd):/app` 這樣的寫法，可以將 Container 的 /app 資料夾映射到目前的目錄。`$(pwd)` 是當前路徑的簡寫。
 
-#### 帶入環境變數
+#### 11. 帶入環境變數
 
 ```bash
 docker run --env ${key}=${value} ${image_id}
@@ -173,7 +173,7 @@ docker run --env-file ${env_file} ${image_id}
 
 Dockerfile 的 ENV 所設定的是預設值，可以用指令覆蓋
 
-#### 建立 Docker network
+#### 12. 建立 Docker network
 
 ```bash
 docker network create ${network_name}
@@ -189,7 +189,7 @@ docker run --name ${container_name} --network ${network_name} ${image_id}
 如果兩個 Container 都有跟同一個 network 連線的話，在程式碼裡面可以直接用 `${container_name}:${port}` 來連線到另一個 Container。
 
 
-#### 檢查與除錯
+#### 13. 檢查與除錯
 
 ```bash
 docker inspect ${container_name}
@@ -211,7 +211,7 @@ docker exec ${container_name} ${command}
 
 docker exec 可在 Container 內執行指令，可以用來做除錯，也可以用 `-it` 來開啟互動式的 shell
 
-#### 啟動 docker compose
+#### 14. 啟動 docker compose
 
 ```bash
 docker-compose up
@@ -231,7 +231,7 @@ docker-compose up --help
 
 加上 `--help`，可以讓 docker-compose 在啟動時，強制重新編譯 image
 
-#### 停止 docker compose
+#### 15. 停止 docker compose
 
 ```bash
 docker-compose down
