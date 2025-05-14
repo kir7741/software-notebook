@@ -8,7 +8,7 @@ last_update:
   author: Joseph Lin
 ---
 
-# Installation
+# PostgreSQL installation
 
 1. 使用以下指令安裝 PostgreSQL
 
@@ -24,7 +24,13 @@ $ brew install postgresql
 $ postgres -V
 ```
 
-3. 使用以下指令啟動 PostgreSQL Server
+3. 也可以使用以下指令查看目前 brew 啟動的服務
+
+```bash
+$ brew services list
+```
+
+4. 使用以下指令啟動 PostgreSQL Server
 
 這個指令會在 localhost 啟動 db server，預設的 port 是 5432
 
@@ -32,14 +38,14 @@ $ postgres -V
 $ brew services start postgresql
 ```
 
-4. 再啟動好 db server 之後，可以使用以下指令進入指定的 db
+5. 再啟動好 db server 之後，可以使用以下指令進入指定的 db
 
 ```bash
 $ psql [dbName]
 $ psql postgres
 ```
 
-4. 使用以下指令停止 PostgreSQL Server
+6. 使用以下指令停止 PostgreSQL Server
 
 ```bash
 $ brew services stop postgresql
