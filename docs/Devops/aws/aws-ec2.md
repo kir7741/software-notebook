@@ -19,16 +19,17 @@ EC2（Elastic Compute Cloud）是 AWS 提供的虛擬伺服器服務，主要用
 
 ### (一)、AWS EBS
 
-EBS（Elastic Block Store）是 AWS 提供的區塊儲存服務，主要用來為 EC2 instance 提供持久性儲存，但也可以設定成 EC2 關閉就刪除( Delete on Terminate)。EBS 可以被視為 EC2 實例的硬碟，並且可以在實例之間進行快照和備份。
+EBS（Elastic Block Store）是 AWS 提供的區塊儲存服務，主要用來為 EC2 instance 提供持久性儲存，但也可以設定成 EC2 關閉就刪除(Delete on Terminate)。EBS 可以被視為 EC2 實例的硬碟，並且可以在實例之間進行快照和備份。
 
 EBS 一次僅能綁在一個 instance 上，但一個 instance 可以綁定多個 EBS，且 EBS 是跟 AZ （可用區）綁定的，這意味著 EBS 只能在同一個 AZ 中使用，無法跨 AZ 使用。
 
 - network drive：EBS 是透過網路進行存取，雖然可以保留資料，但多少會有延遲的問題。
 - snapshot：EBS 的快照，主要用於備份資料，可以跨 AZ 以及 Region 使用。
 - volumn: EBS 的磁碟區， 是 EBS 的一個儲存單位，可以想像成掛載在 EC2 上的虛擬硬碟。可以啟用預設預設加密，儲存的資料、傳輸過程、快照都會進行加密，這樣可以確保資料的安全性。
+  - Root volumn：預設就會有的磁碟區，預設會是 Delete on Terminate。
+  - other volumn：除了 Root volumn 之外的磁碟區，預設不會是 Delete on Terminate。
 
-> io2 volumn 可以掛載在多個 EC2 上，這樣可以讓多個 EC2 之間共享資料，最多可以掛載到 16 個。
-
+> 例外狀況：io2 volumn 可以掛載在多個 EC2 上，這樣可以讓多個 EC2 之間共享資料，最多可以掛載到 16 個。
 
 ### (二)、Instance Store
 
