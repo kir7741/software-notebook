@@ -20,7 +20,9 @@ DNS 最主要的功能就是將網域名稱轉換成 IP 位址，這樣使用者
 
 - Domain Registrar：網域註冊商如 AWS Route 53、GoDaddy、Namecheap 等等。主要是用來註冊網域名稱的服務商，並且提供 DNS 的解析服務。AWS Route 53 是 AWS 提供的網域註冊商，可以直接在 AWS 上註冊網域名稱。
 
-- DNS Records：DNS 紀錄是用來將網域名稱轉換成 IP 位址的紀錄，主要有 A、CNAME、MX、TXT 等等。這些紀錄會告訴 DNS 伺服器如何將網域名稱轉換成 IP 位址，並且可以設定 TTL（Time to Live）來控制紀錄的有效期限。
+- DNS Records：DNS 紀錄是用來將網域名稱轉換成 IP 位址的紀錄，主要有 A、CNAME、MX、TXT 等等。這些紀錄會告訴 DNS 伺服器如何將網域名稱轉換成 IP 位址，
+
+- Time to Live：DNS Records 可以設定 TTL 來控制紀錄的有效期限，也就是快取功能。一開始 client 發出請求給 DNS Server 時，DNS Server 會把 TTL 給 client 端，如果快取沒過期，client 就不會再跟 DNS Server 發出請求。
 
 - Top Level Domain (TLD)：網域名稱的最高層級，如 .com、.net、.org 等等。這些網域名稱是由 ICANN（Internet Corporation for Assigned Names and Numbers）所管理的，並且可以用來註冊網域名稱。
 
@@ -52,9 +54,11 @@ records 是用來將網域名稱轉換成 IP 位址的紀錄，簡單說明就�
 
 而 Record type 主要有以下幾種：
 
-1. A - IPv4 的紀錄，將 domain 對應到 IPv4 的 ip 上，像是 example.com 會對應到 1.2.3.4
+1. A - IPv4 的紀錄，將 hostname 對應到 IPv4 的 ip 上，像是 example.com 會對應到 1.2.3.4
 2. AAAA - IPv6 的紀錄，像是 example.com 會對應到 2001:db8::1
-3. CNAME
-4. NS
+3. CNAME - 將某個 hostname 對應到另一個 hostname，但無法針對 root domain 使用。
+4. NS - Name Servers for the Hosted Zone
+
+- Route 53 的 Alias 跟 CNAME 類似，但主要是轉向 AWS 的服務，像是 S3、CloudFront、ELB、API Gateway 等等，但要注意不能指向 EC2。Alias 的好處是可以針對 root domain 使用，且是免費的。
 
 
