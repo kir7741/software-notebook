@@ -61,4 +61,15 @@ records 是用來將網域名稱轉換成 IP 位址的紀錄，簡單說明就�
 
 - Route 53 的 Alias 跟 CNAME 類似，但主要是轉向 AWS 的服務，像是 S3、CloudFront、ELB、API Gateway 等等，但要注意不能指向 EC2。Alias 的好處是可以針對 root domain 使用，且是免費的。
 
+### (四)、Routing policies
+
+Routing policies 是用來決定 DNS 如何回應 client 的請求，主要有以下幾種：
+
+- Simple routing policy：最簡單的路由策略，DNS 很單純的回覆一個或是多個 IP 給 client，如果是多個的話，client 會隨機選擇一個 IP 來連線。而 Simple policy 不能使用 health check。
+- Weighted routing policy：可以設定多個 IP，並且設定每個 IP 的權重，DNS 會根據權重來回覆 IP 給 client。這個策略可以用來做流量分配。
+- Latency routing policy：可以設定多組 IP，每個 IP 都會對應到一個 Region，DNS 會自動評估 client 的地理位置來回覆延遲最低的 IP 給 client，像是台灣地區用戶會回傳最近的東京地區 IP。這個策略可以用來降低延遲。
+- Failover routing policy：可以設定兩組 IP，一組是 primary，另一組是 secondary，當 primary 的 IP 無法連線時(health check 異常)，DNS 會自動切換到 secondary 的 IP，借此來避免服務中斷。
+- Geolocation routing policy：可以設定多組 region IP 與一個 default region IP ，每個 IP 都會對應到一個 Region，DNS 會根據 client 的地理位置來回覆 IP 給 client，像是美國地區用戶會回傳美國的 IP，沒有的話就回傳預設的 IP。與 latency routing policy 不同的是，這個策略是根據地理位置來回覆 IP，而不是根據延遲時間的長短。
+- Geoproximity routing policy：可以設定多組 IP，每個 IP 可以設定各自的偏差值(Bias)，偏差值越大，代表該 IP 的流量會越多，DNS 會根據 Bias 大小來處理路由。
+- Multi-Value routing policy：可以設定多個 IP，且可以未每組 IP 設定 health check，此策略會找出最多八個健康的 IP，並回覆給 client。
 
