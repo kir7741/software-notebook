@@ -72,3 +72,9 @@ module.exports = {
 只要一個設定檔，就可以讓開發者針對指定的的檔案去做檢查，eslint 可以幫你檢查像是程式碼的型別、語法等等，prettier 則是幫你檢查程式碼的格式，加上 --write 參數，可以讓 prettier 幫你自動修正程式碼格式。
 
 4. 新增 pre-commit-msg hook
+
+
+
+### Refrerences
+
+- [產生簡潔統一的-commit](https://medium.com/@Hsu.Yang-Min/commitizen-%E7%94%A2%E7%94%9F%E7%B0%A1%E6%BD%94%E7%B5%B1%E4%B8%80%E7%9A%84-commit-3b49c40ec515)
