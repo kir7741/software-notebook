@@ -15,6 +15,8 @@ EBS（Elastic Block Store）是 AWS 提供的區塊儲存服務，主要用來�
 
 EBS 一次僅能綁在一個 instance 上，但一個 instance 可以綁定多個 EBS，且 EBS 是跟 AZ （可用區）綁定的，這意味著 EBS 只能在同一個 AZ 中使用，無法跨 AZ 使用。
 
+依據開設的規格進行收費，如果開了 100GB 的 EBS，卻只使用 1GB，還是會依照 100GB 的價格進行收費。
+
 ## Core concepts
 
 - snapshot：EBS 的快照，主要是備份的資料，可以跨 AZ 以及 Region 使用，

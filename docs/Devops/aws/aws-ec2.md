@@ -49,3 +49,48 @@ EFS（Elastic File System）是 AWS 託管的網路文件系統(network file sys
   - Standard：適合用於頻繁訪問的檔案
   - Infrequent Access：適合用於不常使用的資料，讀取時需要價格，但儲存的價格很低。
   - Archive：最少使用的檔案，僅能用於訪問，價格也因此而最低。
+
+
+## Group
+
+### (一)、Cluster placement group（集群放置群組）
+
+HPC 係指 High Performance Computing，高效能運算，主要用於需要高效能運算的應用程式，如科學計算、金融分析、機器學習等。HPC 有一項關鍵是低延遲網路，而 Cluster placement group 有以下特點：
+
+- 將 多個 EC2 instances 緊密的打包在 AZ 裡面，instances 之間有更低的延遲和更高的頻寬
+- EC2 instances 放置在同一個物理位置，所以最大程度地減少實例之間的網絡延遲。
+
+因此適合用於需要高效能運算的應用程式，但缺點是只能在同一個 AZ 裡面使用，出現故障時，整體會一起故障。
+
+### (二)、Partition placement group
+
+Partition placement group 主要用於大型分散式應用程式，如 HDFS、HBase 等等。Partition placement group 可以將 instances 分成多個 partition，每個 partition 裡面的 instances 會被分散在不同的硬體上，這樣可以降低硬體故障對應用程式的影響，並且可以提高應用程式的可用性和容錯性。
+
+
+分區數量和範圍：
+
+每個可用區（AZ）最多可以有7個分區。
+分區放置群組可以橫跨同一區域中的多個可用區。
+EC2實例數量：
+
+分區放置群組可以容納數百個EC2實例。
+分區之間的隔離：
+
+每個分區中的實例與其他分區中的實例不共用機架（rack）。
+這種隔離確保了在一個分區發生故障時，不會影響其他分區中的EC2實例。
+分區信息： 
+
+EC2實例可以透過 metadata 獲取有關分區的信息。
+這些信息可以幫助實例進行相關操作或設置，以實現低延遲和高吞吐量的應用。
+分區放置群組常用於需要高吞吐量和低延遲的應用程序，如HDFS（Hadoop分佈式文件系統）、HBase（分佈式NoSQL數據庫）、Cassandra（分佈式NoSQL數據庫）、Kafka（分佈式消息隊列）等。
+
+### (三)、Spread placement group
+
+Spread placement group 有以下特點：
+
+- 可以將 instances 分散在不同的硬體上
+- 可以跨多個 AZ
+- 一個硬體故障，其他還可以使用
+- 每個 AZ 最多只能有 7 個 instances
+
+因此適合用於需要高可用性(High Availability)和容錯性的應用程式。
