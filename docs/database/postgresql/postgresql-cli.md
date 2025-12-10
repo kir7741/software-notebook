@@ -28,5 +28,9 @@ $ psql -l
 ```bash
 $ psql ${dbName}
 $ psql test-db
+
+# And you can also specify host, port, username, like below:
+$ psql -h ${host} -p ${port} -d ${dbName} -U ${username} 
+$ psql -h localhost -p 5432 -d myviewboard-product -U vsssi
 ```
 
