@@ -19,7 +19,13 @@ docker build ${path}
 # docker build . 會去抓當前目錄的 Dockerfile
 ```
 
-會去抓指定目錄的 Dockerfile 編譯成映像檔，build 完之後會取得一個 image id
+會去抓指定目錄的 Dockerfile 編譯成映像檔，build 完之後會取得一個 image id，就可以利用這個 id 來啟動容器。
+
+```bash
+docker build -t ${image_name} ${path}
+```
+
+或者可以在編譯映像檔時，帶入指令的 image 名稱，來方便記憶，之後也可以針對 image name 來啟動容器。
 
 ```bash
 docker build -t ${image_name} ${path} --build-arg ${key}=${value}
@@ -57,7 +63,6 @@ docker run -d ${image_id}
 2. detach: 分離模式，啟動 Container 後，shell 會回到主機的 shell，可以繼續操作其他指令，但無法看到 Container 裡應用程式的輸出
 
 docker run 預設是 attach 模式，可以帶入 `-d` 參數來使用 detach 模式
-
 
 #### 3. 查看容器 (Container)
 
@@ -188,15 +193,14 @@ docker run --name ${container_name} --network ${network_name} ${image_id}
 這樣就可以啟動一個指定名稱的 Container，並且指定 network 與其連線。
 如果兩個 Container 都有跟同一個 network 連線的話，在程式碼裡面可以直接用 `${container_name}:${port}` 來連線到另一個 Container。
 
-
 #### 13. 檢查與除錯
 
 ```bash
 docker inspect ${container_name}
 
-docker inspect ${image_name} 
+docker inspect ${image_name}
 
-docker inspect ${volumn_name} 
+docker inspect ${volumn_name}
 ```
 
 docker inspect 可以檢查 Container、Image、Volumn 的詳細資訊
@@ -236,6 +240,3 @@ docker-compose up --help
 ```bash
 docker-compose down
 ```
-
-
-
