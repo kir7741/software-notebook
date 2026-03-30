@@ -8,7 +8,9 @@ last_update:
   author: Joseph Lin
 ---
 
-# PostgreSQL installation
+# PostgreSQL
+
+## Installation
 
 1. 使用以下指令安裝 PostgreSQL
 
@@ -49,6 +51,27 @@ $ psql postgres
 
 ```bash
 $ brew services stop postgresql
+```
+
+## ORM Connection
+
+在使用 ORM 連接 PostgreSQL 時，通常需要提供以下資訊：
+
+- Host: PostgreSQL 伺服器的地址，通常是 `localhost` 或 `127.0.0.1`
+- Port: PostgreSQL 伺服器的端口，預設為 `5432`
+- Database: 要連接的資料庫名稱
+- User: 資料庫使用者名稱
+- Password: 資料庫使用者密碼
+
+也可直接使用 connection string 來連接 PostgreSQL，格式如下：
+
+```bash
+
+# PostgreSQL connection string 格式
+postgresql://[user[:password]@][host][:port][/dbname][?param1=value1&...]
+
+# 例如：
+postgresql://vsssi:password@localhost:5432/myviewboard-product?schema=public
 ```
 
 #### Note
