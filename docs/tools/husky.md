@@ -20,7 +20,7 @@ git hook 如同[官網](https://git-scm.com/book/zh-tw/v2/Customizing-Git-Git-Ho
 
 - pre-commit：最先觸發的 hook，在使用者輸入 `git commit` 的使令時，git 會先觸發這個 hook，再去執行 git commit 應該要做的事情。
 在 commit 指令打開互動式輸入視窗時就會先行觸發，主要會透過這個時機點對想要 commit 的程式碼進行檢查
-- pre-commit-msg：在 `git commit` 指定輸入後，commit message 的互動式輸入視窗打開之前觸發，主要是可以在這個時候透過 `commitizen`、`cz-conventional-changelog` 等工具，統一團隊內的 commit message 格式。
+- prepare-commit-msg：在 `git commit` 指定輸入後，commit message 的互動式輸入視窗打開之前觸發，主要是可以在這個時候透過 `commitizen`、`cz-conventional-changelog` 等工具，統一團隊內的 commit message 格式。
 - commit-msg：會在使用者完成輸入 commit message 後，git 實際把這個 message 送出前觸發，主要的功能是可以在這個時候對 commit message 進行檢查，例如：commit message 是否符合規範、是否有特定的關鍵字等等。
 
 #### 如何使用
@@ -71,10 +71,29 @@ module.exports = {
 
 只要一個設定檔，就可以讓開發者針對指定的的檔案去做檢查，eslint 可以幫你檢查像是程式碼的型別、語法等等，prettier 則是幫你檢查程式碼的格式，加上 --write 參數，可以讓 prettier 幫你自動修正程式碼格式。
 
-4. 新增 pre-commit-msg hook
+4. 新增 prepare-commit-msg hook
 
+在 `.husky` 資料夾底下新增一個 `prepare-commit-msg` 檔案，內容如下：
 
+```bash
+echo 'Run prepare-commit-msg...'
+exec < /dev/tty && node_modules/.bin/cz --hook || true
+```
+
+上面的指令，就是單純在 prepare-commit-msg 時，讓 husky 去執行 commitizen，讓 commitizen 去幫你統一 commit message 的格式。
+
+5. 新增 commit-msg hook
+
+在 `.husky` 資料夾底下新增一個 `commit-msg` 檔案，內容如下：
+
+```bash
+echo 'Run commit-msg...'
+npx --no-install commitlint --edit
+```
+
+上面的指令，就是單純在 commit-msg 時，讓 husky 去執行 commitlint，讓 commitlint 去幫你檢查 commit message 是否符合規範。
 
 ### Refrerences
 
 - [產生簡潔統一的-commit](https://medium.com/@Hsu.Yang-Min/commitizen-%E7%94%A2%E7%94%9F%E7%B0%A1%E6%BD%94%E7%B5%B1%E4%B8%80%E7%9A%84-commit-3b49c40ec515)
+- [尋覓網站開發的神兵利器](https://ithelp.ithome.com.tw/articles/10279064)

@@ -1,0 +1,182 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{needspace}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage[hidelinks]{hyperref}
+
+\newcommand\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \Needspace{3.5\baselineskip}
+    \noindent
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large #1} & \textit{\small #3} \\
+      \vspace{-8pt} \\
+      \textit{\large #2} & \textit{\small #4} \\
+    \end{tabular*}%
+    \par\vspace{2pt}
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+    {\Huge \scshape {Joseph Lin}}\\
+    \vspace*{2pt}
+    {\small Frontend Engineer}\\
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        New Taipei City, Taiwan
+        & \href{https://github.com/kir7741}{github.com/kir7741}
+    \end{tabular*}
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        typhoonjoe2003@gmail.com & \\
+    \end{tabular*}
+        \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        0921-451-519
+    \end{tabular*}
+\end{center}
+
+%==== Summary ====%
+\header{Summary}
+\vspace{1mm}
+Frontend Engineer with 8+ years of expertise in TypeScript, Angular, React, Next.js, and Vue, architecting enterprise products across edtech, fintech, and e-commerce. Led enterprise design system development (20+ components), optimized WCAG AA accessibility and Core Web Vitals, and built reliable frontend experiences with automated testing and CI-driven quality practices. Experienced in NestJS backend API development, automated AWS deployments (CloudFront/S3) to cut release times by 40\%, and directed 5–6 person engineering teams with a 95\%+ on-time delivery rate. 
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\resumeSubheading
+    {Frontend Engineer}
+    {ViewSonic}
+    {New Taipei City, Taiwan}
+    {Jul 2024 – Aug 2026}
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Built and maintained core company products, including VS Account, myViewBoard, and myViewBoard Hub, supporting thousands of enterprise and education users across Angular and React-based frontend architectures.
+    \item Collaborated with UI/UX designers to establish an internal design system with 20+ reusable components, defining shared patterns, design standards, and accessibility guidelines to improve consistency and accelerate feature delivery by 20\%+.
+    \item Implemented accessibility improvements to achieve WCAG AA compliance and optimize Core Web Vitals, reducing CLS to below 0.1.
+    \item Established automated frontend testing practices with Jest and CI pipelines, reducing regressions and increasing release confidence across core products.
+    \item Implemented automated deployment workflows for 5+ frontend projects using AWS CloudFront and S3, reducing release time by 40\% and improving web performance.
+    \item Served as Scrum Master, coordinating Agile ceremonies and driving team execution to maintain on-time delivery across cross-functional workstreams.
+    \item Developed scalable backend APIs with NestJS to support product growth and improve service reliability.
+    \item Adopted Claude Code and OpenSpec to standardize implementation workflows and accelerate delivery across frontend teams.
+\end{itemize}
+
+\resumeSubheading
+    {Assistant Frontend Manager}
+    {25sprout}
+    {Taipei, Taiwan}
+    {Mar 2022 – Jul 2024}
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Established code review standards and quality gates to improve engineering consistency and delivery reliability.
+    \item Managed 10+ internal packages through GitLab Package Registry to reduce duplication and improve development efficiency.
+    \item Led a 5–6 person frontend team, driving system architecture and task breakdown to maintain a 95\%+ on-time delivery rate.
+    \item Mentored junior engineers and established frontend guidelines, reducing onboarding time for new hires to under 3 weeks.
+    \item Led SEO and performance initiatives that pushed key e-commerce pages to Google Page 1, driving organic traffic growth.
+\end{itemize}
+
+\resumeSubheading
+    {Senior Frontend Developer}
+    {25sprout}
+    {Taipei, Taiwan}
+    {Nov 2021 – Mar 2022}
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Developed customized front-end systems and promotional event websites using Angular.
+    \item Built e-commerce platforms and brand marketing websites using React and Redux.
+    \item Partnered with PMs to clarify functional requirements and provided technical solutions and estimates.
+\end{itemize}
+
+\resumeSubheading
+    {Frontend Developer}
+    {XtremeApp Technology}
+    {Taipei, Taiwan}
+    {Nov 2017 – Oct 2021}
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Maintained and enhanced existing enterprise web applications using JavaScript and jQuery.
+    \item Developed internal systems and admin portals for finance and insurance clients using Angular and Angular Material.
+    \item Built and scaled core internal products using Angular.
+\end{itemize}
+
+%==== Skills ====%
+\header{Skills}
+\begin{tabular}{ l l }
+    Languages: & TypeScript, JavaScript \\
+    Frameworks: & Angular, React, Next.js, Vue, NestJS \\
+    UI \& Styling: & CSS Modules, Tailwind CSS, Material UI, Ant Design, shadcn/ui \\
+    Testing \& Quality: & Jest, Vitest \\
+    Tooling \& DevOps: & Webpack, Vite, Docker, Git, CI/CD, AWS CloudFront, S3 \\
+    AI \& Workflow: & Claude Code, OpenSpec \\
+\end{tabular}
+\vspace{2mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{Soochow University}\hfill Taiwan\\
+Political Science \hfill 2009 - 2013\\
+\vspace{2mm}
+
+\end{document}
+

@@ -152,6 +152,7 @@ docker volume ls
 
 # Volumn
 docker run -v ${volumn_name}:${container_path} ${image_id}
+# docker run -v my_volumn:/app/temp 1234567890
 
 # Bind mount
 docker run -v ${local_path}:${container_path} ${image_id}
