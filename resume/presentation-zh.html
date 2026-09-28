@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林振強 Joseph Lin — 前端工程師</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-bg:        #0B0B10;
+      --color-card:      #1E1E23;
+      --color-muted:     #232328;
+      --color-border:    #1E293B;
+      --color-fg:        #F8FAFC;
+      --color-secondary: #94A3B8;
+      --color-accent:    #3B82F6;
+      --color-accent-dim:#1D4ED8;
+      --color-glow:      rgba(59,130,246,0.35);
+      --font-display:    'Noto Sans TC', 'Exo', sans-serif;
+      --font-mono:       'Roboto Mono', monospace;
+      --font-label:      'Exo', 'Noto Sans TC', sans-serif;
+    }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: var(--color-bg);
+      color: var(--color-fg);
+      font-family: var(--font-display);
+      overflow: hidden;
+    }
+
+    #deck { position: relative; width: 100vw; height: 100vh; }
+
+    .slide {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      padding: 52px 88px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+    .slide.active { opacity: 1; pointer-events: auto; }
+
+    .slide::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+
+    .corner { position: absolute; width: 32px; height: 32px; border-color: var(--color-accent); border-style: solid; opacity: 0.55; }
+    .corner-tl { top: 28px; left: 36px; border-width: 2px 0 0 2px; }
+    .corner-tr { top: 28px; right: 36px; border-width: 2px 2px 0 0; }
+    .corner-bl { bottom: 28px; left: 36px; border-width: 0 0 2px 2px; }
+    .corner-br { bottom: 28px; right: 36px; border-width: 0 2px 2px 0; }
+
+    #counter {
+      position: fixed; bottom: 24px; right: 44px;
+      font-family: var(--font-mono); font-size: 12px;
+      color: var(--color-secondary); letter-spacing: 2px; z-index: 10;
+    }
+
+    #dots {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      display: flex; gap: 8px; z-index: 10;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--color-border); border: 1px solid var(--color-secondary);
+      cursor: pointer; transition: background 0.3s, box-shadow 0.3s;
+    }
+    .dot.active { background: var(--color-accent); box-shadow: 0 0 8px var(--color-glow); }
+
+    .nav-btn {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      width: 40px; height: 40px; border: 1px solid var(--color-border);
+      background: rgba(30,30,35,0.7); color: var(--color-secondary);
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; border-radius: 4px; z-index: 10;
+      font-size: 20px; transition: border-color 0.2s, color 0.2s;
+    }
+    .nav-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    #btn-prev { left: 16px; }
+    #btn-next { right: 16px; }
+
+    .slide-label {
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 4px; color: var(--color-accent);
+      text-transform: uppercase; align-self: flex-start;
+    }
+
+    /* ─── SLIDE 1 COVER ─── */
+    #s1 { text-align: center; gap: 16px; }
+    .s1-en {
+      font-family: var(--font-label); font-size: 11px;
+      letter-spacing: 5px; color: var(--color-accent); text-transform: uppercase;
+    }
+    .s1-name {
+      font-size: clamp(52px, 7.5vw, 96px);
+      font-weight: 700; line-height: 1;
+      background: linear-gradient(135deg, #F8FAFC 40%, #3B82F6);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .s1-name-en {
+      font-family: var(--font-label);
+      font-size: clamp(18px, 2.2vw, 28px); font-weight: 300;
+      color: var(--color-secondary); letter-spacing: 8px;
+      -webkit-text-fill-color: var(--color-secondary);
+    }
+    .s1-title {
+      font-size: clamp(13px, 1.6vw, 18px); font-weight: 400;
+      color: var(--color-secondary); letter-spacing: 4px; margin-top: 8px;
+    }
+    .s1-divider {
+      width: 80px; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+      margin: 20px auto;
+    }
+    .s1-stats { display: flex; gap: 52px; justify-content: center; }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: var(--font-mono);
+      font-size: clamp(28px, 4vw, 52px); font-weight: 700; color: var(--color-accent);
+    }
+    .stat-lbl { font-size: 12px; letter-spacing: 2px; color: var(--color-secondary); margin-top: 4px; }
+
+    /* ─── SLIDE 2 ABOUT ─── */
+    #s2 { gap: 24px; max-width: 860px; }
+    .slide-heading {
+      font-size: clamp(30px, 4vw, 52px); font-weight: 700;
+      line-height: 1.15; align-self: flex-start;
+    }
+    .about-text {
+      font-size: clamp(14px, 1.4vw, 17px); line-height: 2;
+      color: var(--color-secondary); align-self: flex-start;
+    }
+    .about-text strong { color: var(--color-fg); font-weight: 600; }
+    .tags { display: flex; gap: 10px; flex-wrap: wrap; align-self: flex-start; margin-top: 4px; }
+    .tag {
+      padding: 5px 14px; border: 1px solid var(--color-border);
+      border-radius: 2px; font-size: 12px; color: var(--color-secondary);
+      background: var(--color-card); letter-spacing: 0.5px;
+    }
+    .tag.hi {
+      border-color: rgba(59,130,246,0.5); color: #93C5FD;
+      background: rgba(59,130,246,0.08);
+    }
+
+    /* ─── COMPANY SLIDES (s3/s4/s5) ─── */
+    .co-slide { gap: 20px; max-width: 1020px; width: 100%; }
+
+    /* header row */
+    .co-header {
+      display: flex; align-items: flex-start;
+      justify-content: space-between; align-self: stretch;
+      gap: 16px;
+    }
+    .co-name {
+      font-size: clamp(22px, 2.8vw, 36px); font-weight: 700; line-height: 1.1;
+    }
+    .co-name span {
+      font-family: var(--font-mono); font-size: 0.55em;
+      color: var(--color-accent); display: block; letter-spacing: 2px;
+      margin-top: 4px; font-weight: 400;
+    }
+    .co-period {
+      font-family: var(--font-mono); font-size: 12px;
+      color: var(--color-secondary); letter-spacing: 1px;
+      text-align: right; white-space: nowrap; padding-top: 4px;
+    }
+
+    /* divider line */
+    .co-divider {
+      align-self: stretch; height: 1px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-border), transparent);
+    }
+
+    /* main body: contributions + metrics side-by-side */
+    .co-body {
+      display: grid; grid-template-columns: 1fr 150px;
+      gap: 24px; align-self: stretch; align-items: start;
+    }
+    .co-body > div:first-child { min-width: 0; }
+
+    /* role badge */
+    .co-role {
+      font-size: 12px; font-family: var(--font-mono);
+      color: var(--color-accent); letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 10px;
+    }
+
+    /* contribution bullets */
+    .co-bullets { display: flex; flex-direction: column; gap: 8px; }
+    .co-bullet {
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: clamp(13px, 1.3vw, 15px); line-height: 1.65;
+      color: var(--color-secondary); overflow-wrap: anywhere; min-width: 0;
+    }
+    .co-bullet::before {
+      content: '▸'; color: var(--color-accent);
+      flex-shrink: 0; margin-top: 1px; font-size: 12px;
+    }
+    .co-bullet strong { color: var(--color-fg); font-weight: 600; }
+
+    /* metric badges column */
+    .co-metrics { display: flex; flex-direction: column; gap: 10px; width: 150px; flex-shrink: 0; }
+    .metric-badge {
+      background: var(--color-card); border: 1px solid var(--color-border);
+      border-radius: 4px; padding: 10px 14px; position: relative; overflow: hidden;
+      text-align: center;
+    }
+    .metric-badge::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--color-accent-dim), var(--color-accent));
+    }
+    .metric-badge .mv {
+      font-family: var(--font-mono); font-weight: 700;
+      font-size: clamp(16px, 2vw, 22px); color: var(--color-accent);
+    }
+    .metric-badge .ml {
+      font-size: 11px; color: var(--color-secondary);
+      margin-top: 2px; line-height: 1.4;
+    }
+
+    /* tech chips row */
+    .co-tech { display: flex; flex-wrap: wrap; gap: 7px; align-self: flex-start; }
+    .chip {
+      padding: 3px 11px; border-radius: 2px;
+      font-family: var(--font-mono); font-size: 11px;
+      border: 1px solid var(--color-border);
+      color: var(--color-fg); background: var(--color-muted);
+    }
+    .chip.hi {
+      border-color: rgba(59,130,246,0.5);
+      background: rgba(59,130,246,0.1); color: #93C5FD;
+    }
+
+    /* ─── SLIDE 6 CONTACT ─── */
+    #s6 { text-align: center; gap: 20px; }
+    .closing-msg {
+      font-size: clamp(26px, 3.8vw, 50px); font-weight: 700; line-height: 1.25;
+    }
+    .closing-sub { font-size: 15px; color: var(--color-secondary); margin-top: 4px; }
+    .contact-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+    .contact-row { display: flex; align-items: center; justify-content: center; gap: 16px; }
+    .contact-lbl {
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 3px; color: var(--color-secondary);
+      text-transform: uppercase; min-width: 76px; text-align: right;
+    }
+    .contact-val { font-size: 16px; font-weight: 500; }
+    .contact-val a { color: var(--color-accent); text-decoration: none; }
+    .contact-val a:hover { text-decoration: underline; }
+
+    :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    @media (max-width: 768px) {
+      .slide { padding: 48px 24px; }
+      .co-body { grid-template-columns: 1fr; }
+      .co-metrics { flex-direction: row; flex-wrap: wrap; min-width: unset; }
+      .s1-stats { gap: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="deck" role="main">
+
+  <!-- ── 投影片 1：封面 ── -->
+  <section class="slide active" id="s1" aria-label="封面">
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+
+    <p class="s1-en">Self Introduction</p>
+    <h1 class="s1-name">林振強</h1>
+    <p class="s1-name-en">Joseph Lin</p>
+    <p class="s1-title">前端工程師</p>
+    <div class="s1-divider"></div>
+    <p style="max-width:620px; text-align:center; font-size:clamp(14px,1.4vw,17px); line-height:2; color:var(--color-secondary);">
+      擁有 8 年前端開發經驗，涵蓋金融保險後台、電商平台、品牌官網與教育科技產品，<br>
+      兼具後端 API 開發能力，習慣以全端思維參與系統設計。
+    </p>
+  </section>
+
+  <!-- ── 投影片 2：關於我 ── -->
+  <section class="slide" id="s2" aria-label="關於我">
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+
+    <h2 class="slide-heading">關於我</h2>
+    <p class="about-text">
+      在軟體業有 8 年多的經驗，主要使用 <strong>Angular、React、Vue</strong> 等框架來開發產品與專案。<br>
+      過去接觸的產業涵蓋金融保險、教育科技與電子商務，
+      主要工作有開發企業後台系統、電商平台、以及建立跨團隊的產品模組。<br>
+    </p>
+    <div class="tags">
+      <span class="tag hi">金融保險</span>
+      <span class="tag hi">教育科技</span>
+      <span class="tag hi">電子商務</span>
+      <span class="tag">設計系統</span>
+      <span class="tag">無障礙開發</span>
+      <span class="tag">技術領導</span>
+      <span class="tag">CI/CD &amp; AWS</span>
+    </div>
+  </section>
+
+  <!-- ── 投影片 3：XtremeApp ── -->
+  <section class="slide co-slide" id="s3" aria-label="XtremeApp">
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+
+    <p class="slide-label">// 01 — 職涯起點</p>
+
+    <div class="co-header">
+      <div class="co-name">
+        XtremeApp Technology
+        <span>前端工程師</span>
+      </div>
+      <div class="co-period">2017.11 — 2021.10</div>
+    </div>
+
+    <div class="co-divider"></div>
+
+    <div class="co-body">
+      <div>
+        <div class="co-bullets">
+          <div class="co-bullet">以 <strong>Angular</strong> 開發金融、保險客戶的內部系統與後台管理平台</div>
+          <div class="co-bullet">以 <strong>Vue</strong> 開發品牌行銷網站</div>
+          <div class="co-bullet">在這份工作上累積了處理複雜表單、權限管理與資料安全的開發實戰經驗。</div>
+          <div class="co-bullet">轉職新人到能獨立開發專案。</div>
+        </div>
+        <div class="co-tech" style="margin-top:16px;">
+          <span class="chip hi">Angular</span>
+          <span class="chip hi">Vue</span>
+          <span class="chip hi">Flutter</span>
+          <span class="chip">TypeScript</span>
+        </div>
+      </div>
+      <div class="co-metrics">
+        <div class="metric-badge">
+          <div class="mv">4 年</div>
+          <div class="ml">金融保險產業<br>前端開發經驗</div>
+        </div>
+        <div class="metric-badge">
+          <div class="mv">企業級</div>
+          <div class="ml">內部系統<br>後台平台</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 投影片 4：25sprout ── -->
+  <section class="slide co-slide" id="s4" aria-label="25sprout">
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+
+    <p class="slide-label">// 02 — 技術廣度 &amp; 領導轉型</p>
+
+    <div class="co-header">
+      <div class="co-name">
+        25sprout 新芽網路
+        <span>資深前端工程師 → 前端副理</span>
+      </div>
+      <div class="co-period">2021.11 — 2024.07</div>
+    </div>
+
+    <div class="co-divider"></div>
+
+    <div class="co-body">
+      <div>
+        <div class="co-bullets">
+          <div class="co-bullet"><strong>Angular</strong> 開發保險業客製化系統；<strong>React + Vue</strong> 建置電商平台與品牌行銷網站，拓展技術廣度。</div>
+          <div class="co-bullet">與 PM、設計師協作釐清需求，提供技術方案評估與工時估算，降低規格不確定性。</div>
+          <div class="co-bullet">晉升前端副理後，帶領 <strong>5–6 人前端團隊</strong>，負責系統架構規劃與任務拆解。</div>
+          <div class="co-bullet">協助建立 Mentor 制度，幫助新人上手專案。</div>
+          <div class="co-bullet">協助掌控團隊成員進度讓專案可以準時交付。</div>
+        </div>
+        <div class="co-tech" style="margin-top:16px;">
+          <span class="chip hi">Angular</span>
+          <span class="chip hi">React</span>
+          <span class="chip hi">Vue</span>
+          <span class="chip">Jest</span>
+        </div>
+      </div>
+      <div class="co-metrics">
+        <div class="metric-badge">
+          <div class="mv">95%+</div>
+          <div class="ml">跨部門協作<br>準時交付率</div>
+        </div>
+        <div class="metric-badge">
+          <div class="mv">&lt; 3 週</div>
+          <div class="ml">新人上手<br>時間</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 投影片 5：ViewSonic ── -->
+  <section class="slide co-slide" id="s5" aria-label="ViewSonic">
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+
+    <p class="slide-label">// 03 — 現任</p>
+
+    <div class="co-header">
+      <div class="co-name">
+        ViewSonic 優派
+        <span>前端工程師</span>
+      </div>
+      <div class="co-period">2024.07 — 至今</div>
+    </div>
+
+    <div class="co-divider"></div>
+
+    <div class="co-body">
+      <div>
+        <div class="co-bullets">
+          <div class="co-bullet">以 <strong>Angular &amp; React</strong> 開發 VS Account、myViewBoard 等核心產品，服務企業與教育用戶。</div>
+          <div class="co-bullet">與設計師共建 <strong>Design System（20+ 元件）</strong>，統一設計標準，功能交付效率提升 <strong>20%+</strong>。</div>
+          <div class="co-bullet">達成 <strong>WCAG AA</strong> 無障礙合規，Core Web Vitals CLS 降至 <strong>0.1 以下</strong>。</div>
+          <div class="co-bullet">建立 AWS CloudFront / S3 自動化部署流程（5+ 專案），部署時間縮短 <strong>40%</strong>。</div>
+          <div class="co-bullet"><strong>NestJS</strong> 開發後端 API</div>
+          <div class="co-bullet">使用 <strong>Claude Code / OpenSpec</strong> 標準化 AI 輔助開發工作流。</div>
+        </div>
+        <div class="co-tech" style="margin-top:16px;">
+          <span class="chip hi">Angular</span>
+          <span class="chip hi">React</span>
+          <span class="chip hi">TypeScript</span>
+          <span class="chip">NestJS</span>
+          <span class="chip">AWS CloudFront</span>
+          <span class="chip">S3</span>
+          <span class="chip">Vitest</span>
+          <span class="chip">Docker</span>
+          <span class="chip hi">Claude Code</span>
+        </div>
+      </div>
+      <div class="co-metrics">
+        <div class="metric-badge">
+          <div class="mv">↓ 40%</div>
+          <div class="ml">自動化部署<br>縮短上線時間</div>
+        </div>
+        <div class="metric-badge">
+          <div class="mv">20+</div>
+          <div class="ml">Design System<br>元件數</div>
+        </div>
+        <div class="metric-badge">
+          <div class="mv">WCAG AA</div>
+          <div class="ml">無障礙合規<br>CLS &lt; 0.1</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 投影片 6：聯絡 ── -->
+  <section class="slide" id="s6" aria-label="聯絡方式">
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+
+    <p class="slide-label">// 期待合作</p>
+    <h2 class="closing-msg">期待帶著這些經驗<br>加入您的團隊。</h2>
+    <p class="closing-sub">前端工程師 · 新北市，台灣</p>
+
+    <div class="contact-grid">
+      <div class="contact-row">
+        <span class="contact-lbl">GitHub</span>
+        <span class="contact-val">
+          <a href="https://github.com/kir7741" target="_blank" rel="noopener">github.com/kir7741</a>
+        </span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<button class="nav-btn" id="btn-prev" aria-label="上一張" tabindex="0">&#8592;</button>
+<button class="nav-btn" id="btn-next" aria-label="下一張" tabindex="0">&#8594;</button>
+<div id="dots" role="tablist" aria-label="投影片導覽"></div>
+<div id="counter" aria-live="polite"></div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const dotsEl = document.getElementById('dots');
+  const counter = document.getElementById('counter');
+  let current = 0;
+
+  slides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('role', 'tab');
+    d.setAttribute('aria-label', `投影片 ${i + 1}`);
+    d.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(d);
+  });
+
+  function goTo(idx) {
+    if (idx < 0 || idx >= slides.length) return;
+    slides[current].classList.remove('active');
+    dotsEl.children[current].classList.remove('active');
+    current = idx;
+    slides[current].classList.add('active');
+    dotsEl.children[current].classList.add('active');
+    counter.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+    animateSlide(slides[current]);
+  }
+
+  function animateSlide(slide) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const children = Array.from(slide.children).filter(el => !el.classList.contains('corner'));
+    gsap.fromTo(children,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.42, stagger: 0.07, ease: 'back.out(1.4)', clearProps: 'all' }
+    );
+  }
+
+  goTo(0);
+
+  document.getElementById('btn-prev').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('btn-next').addEventListener('click', () => goTo(current + 1));
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goTo(current + 1);
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   goTo(current - 1);
+    if (e.key === 'Home') goTo(0);
+    if (e.key === 'End')  goTo(slides.length - 1);
+  });
+</script>
+</body>
+</html>
